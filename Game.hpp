@@ -104,6 +104,7 @@ private:
   [[nodiscard]] size_t getPlayerCount() const { return playercount_; }
 
 public:
+  unsigned long getFordbiddenPosition() { return forbidden_move_.position; }
   //------------------------------------------------------------------------------------------------------------------
   ///
   /// Destructor

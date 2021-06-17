@@ -120,6 +120,9 @@ bool IOLoop::executePlay()
   {
     cout << "Debug play: " << endl;
     auto ai_ = AI(game_);
+    cout << ai_.getLifeTime() << endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    cout << ai_.getLifeTime() << endl;
     return true;
   }
   return false;
@@ -189,6 +192,7 @@ bool IOLoop::executeGo()
           throw InvalidParameter(y);
         }
         cout << "Debug call backend" << endl;
+        // backend call:
       }
       return true; // if no exception
     }
