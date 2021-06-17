@@ -615,7 +615,7 @@ bool Game::findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& t
     }
     for (const auto& neighbour : neighbours_of())
     {
-//      cout << "F Score " << neighbour->getFScore() << endl;
+      //      cout << "F Score " << neighbour->getFScore() << endl;
       if (neighbour)
       {
         double tentative_g_score = current->getGScore() + 1;
@@ -734,6 +734,10 @@ void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t
     }
   }
   auto dest = gameboard_.at(row).at(column);
+  if (dest == origin)
+  {
+    throw ImpossibleMove();
+  }
   auto found = findPath(origin, dest);
   if (found)
   {
