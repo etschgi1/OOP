@@ -734,10 +734,6 @@ void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t
     }
   }
   auto dest = gameboard_.at(row).at(column);
-  if (dest == origin)
-  {
-    throw ImpossibleMove();
-  }
   auto found = findPath(origin, dest);
   if (found)
   {
