@@ -232,6 +232,7 @@ void Game::movePlayer(const shared_ptr<Player>& player, int direction, int steps
       if (player_in_tile == player)
       {
         Coordinates pos = getCoordsOf(tile);
+        cout << pos.row_ << " and " << pos.column_ << endl;
         //        check if move is valid checkvalidmove(coords,direction,steps)
         if (checkMoveIsValid(pos, direction, steps))
         {
@@ -272,9 +273,9 @@ bool Game::checkMoveIsValid(const Coordinates& pos, int direction, int steps)
   int col_step = odd ? 0 : ((direction) ? (-1) : (1));
   auto current = gameboard_.at(pos.row_).at(pos.column_);
   //  Static cast conversion is valid because if the int were negative the check just before would have caught it
-  if ((-1 > ((int) pos.row_ + row_step * steps)) ||
+  if ((-1 > (static_cast<long>(pos.row_) + row_step * steps)) ||
       (static_cast<size_t>(pos.row_ + row_step * steps) >= (gameboard_.size())) ||
-      (-1 > ((int) pos.column_ + col_step * steps)) ||
+      (-1 > (static_cast<long>(pos.column_) + col_step * steps)) ||
       (static_cast<size_t>(pos.column_ + col_step * steps) >= (gameboard_.size())))
   {
     return false;
@@ -702,7 +703,7 @@ bool Game::isInQueue(T queue, const shared_ptr<Tile>& f)
 //----------------------------------------------------------------------------------------------------------------------
 Coordinates Game::getCoordsOf(const shared_ptr<Tile>& tile)
 {
-  Coordinates pos;
+  Coordinates pos{0, 0};
   for (auto row : gameboard_)
   {
     auto iter = find(row.begin(), row.end(), tile);
