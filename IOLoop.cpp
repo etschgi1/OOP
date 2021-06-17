@@ -191,9 +191,13 @@ bool IOLoop::executeGo()
           throw InvalidParameter(y);
         }
         cout << "Debug call backend" << endl;
-        game_.goTo(current_player_, x, y);
+        game_.goTo(current_player_, x - 1, y - 1);
+        if (print_map_)
+        {
+          printMap();
+        }
+        return true; // if no exception
       }
-      return true; // if no exception
     }
     auto direction_input = tokens_.at(FIRST_PARAMETER_INPUT);
     if (!isFirstParameterValid())

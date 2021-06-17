@@ -212,6 +212,8 @@ public:
   [[nodiscard]] double getGScore() const;
 
   [[nodiscard]] double getFScore() const;
+
+  void resetScores();
 };
 
 #endif // OOP1SS21_A2_135_TILE_H

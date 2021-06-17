@@ -278,6 +278,7 @@ bool Game::checkMoveIsValid(const Coordinates& pos, int direction, int steps)
       (-1 > (static_cast<long>(pos.column_) + col_step * steps)) ||
       (static_cast<size_t>(pos.column_ + col_step * steps) >= (gameboard_.size())))
   {
+
     return false;
   }
   for (int i = 0; i < steps; i++)
@@ -586,8 +587,7 @@ bool Game::findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& t
     {
       if (tile)
       {
-        tile->setFScore(std::numeric_limits<double>::infinity());
-        tile->setGScore(std::numeric_limits<double>::infinity());
+        tile->resetScores();
       }
     }
   }
@@ -597,9 +597,11 @@ bool Game::findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& t
   { return (left->getFScore()) > (right->getFScore()); };
   std::priority_queue<shared_ptr<Tile>, std::vector<shared_ptr<Tile>>, decltype(cmp)> open_set_(cmp);
   //  end cite
+  origin_tile_ = from_item;
+  destination_tile_ = to_item;
   origin_ = getCoordsOf(from_item);
   destination_ = getCoordsOf(to_item);
-  from_item->setGScore(0);
+  from_item->setGScore(0.0);
   from_item->setFScore(heuristic(from_item, to_item));
   open_set_.push(from_item);
 
@@ -614,6 +616,7 @@ bool Game::findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& t
     }
     for (const auto& neighbour : neighbours_of())
     {
+//      cout << "F Score " << neighbour->getFScore() << endl;
       if (neighbour)
       {
         double tentative_g_score = current->getGScore() + 1;
@@ -656,14 +659,14 @@ std::vector<shared_ptr<Tile>> Game::neighbours_of()
 
   if (row < NUMBER_OF_ROWS - 1)
   {
-    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_UP, 1))
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_DOWN, 1))
     {
       neighbours.push_back(gameboard_.at(row + 1).at(col));
     }
   }
   if (row > 0)
   {
-    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_DOWN, 1))
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_UP, 1))
     {
       neighbours.push_back(gameboard_.at(row - 1).at(col));
     }
@@ -746,4 +749,5 @@ void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t
   {
     throw ImpossibleMove();
   }
+  tiles_containing_players_.insert(dest);
 }

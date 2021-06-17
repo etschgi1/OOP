@@ -142,6 +142,11 @@ void Tile::setGScore(double score)
   g_score_ = score;
 }
 
+void Tile::resetScores(){
+  g_score_ = std::numeric_limits<double>::infinity();
+  f_score_ = std::numeric_limits<double>::infinity();
+}
+
 void Tile::setFScore(double score)
 {
   f_score_ = score;
