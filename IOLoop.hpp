@@ -65,7 +65,7 @@ class IOLoop
   const size_t UPPER_INSERT_ROW_COL_BOUNDARY = 7;
   const size_t LOWER_INSERT_ROW_COL_BOUNDARY = 1;
   const string ALL_TREASURES_FOUND_MESSAGE = "All Treasures found, return to your startfield to win!";
-
+  const string TEAM_NAME = "ϾPlaceholderϿ¶";
   //  Internal Vector containing valid commands before tile is inserted
   vector<string> invalid_before_insert_ = {"w",      "a",      "s",  "d", "\x1b[A", "\x1b[B",
                                            "\x1b[C", "\x1b[D", "go", "f", "finish"};
@@ -75,6 +75,8 @@ class IOLoop
       // the rest all valid paremeters.
       {"quit", "1"},
       {"exit", "1"},
+      {"whoami", "1"},
+      {"Whoami", "1"},
       // all available exit commands_
       {"gamefield", "2", "on", "off"},
       {"gamefield", "1"},
@@ -112,7 +114,7 @@ class IOLoop
       // all valid commands_. First part represents the basic tokens_, the second one the valid number of
       // parameters and
       // the rest all valid paremeters.
-      Request{"quit"}, Request{"exit"},
+      Request{"quit"}, Request{"exit"}, Request{"whoami"}, Request{"Whoami"},
       // all available exit commands_
       Request{"gamefield", 2, {"on", "off"}}, Request{"gamefield"}, Request{"g", 2, {"on", "off"}}, Request{"g"},
       // commands_ for showing the gamefield
@@ -172,6 +174,7 @@ public:
   void runGame();
 
 private:
+  bool executeWhoami();
   //------------------------------------------------------------------------------------------------------------------
   ///
   /// Tries to execute the parsed command, but throws the appropriate errors if needed

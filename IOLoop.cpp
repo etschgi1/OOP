@@ -93,7 +93,7 @@ void IOLoop::executeCommand()
       throw WrongNumberOfArguments();
     }
     if (executeQuitGame() || executeShowFreeTile() || executeRotate() || executeWASDAndArrowKeys() || executeGo() ||
-        executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield())
+        executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield() || executeWhoami())
     {
       return;
     }
@@ -113,7 +113,16 @@ void IOLoop::printMap()
   game_.printMap();
   checkTreasurePrint();
 }
-
+//---------------------------------------------------------------------------------------------------------------------
+bool IOLoop::executeWhoami()
+{
+  if (command_ == "whoami" || command_ == "Whoami")
+  {
+    cout << "[INFO] Team: " << TEAM_NAME << endl;
+    return true;
+  }
+  return false;
+}
 //---------------------------------------------------------------------------------------------------------------------
 bool IOLoop::executeQuitGame()
 {
@@ -483,8 +492,8 @@ vector<string> IOLoop::parseCommand()
 
 //---------------------------------------------------------------------------------------------------------------------
 // Tokenize function
-//from: https://www.techiedelight.com/split-string-cpp-using-delimiter/
-//begin
+// from: https://www.techiedelight.com/split-string-cpp-using-delimiter/
+// begin
 void IOLoop::tokenize(const string& str, const char delimiter, vector<string>& out)
 {
   size_t start;
@@ -495,7 +504,7 @@ void IOLoop::tokenize(const string& str, const char delimiter, vector<string>& o
     out.push_back(str.substr(start, end - start));
   }
 }
-//end
+// end
 
 //---------------------------------------------------------------------------------------------------------------------
 bool IOLoop::commandExists()
