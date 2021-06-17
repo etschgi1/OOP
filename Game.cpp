@@ -716,3 +716,34 @@ Coordinates Game::getCoordsOf(const shared_ptr<Tile>& tile)
   }
   return pos;
 }
+
+void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t column)
+{
+  shared_ptr<Tile> origin;
+  for (const auto& tile : tiles_containing_players_)
+  {
+    for (const auto& player_on_tile : tile->getPlayers())
+    {
+      if (player == player_on_tile)
+      {
+        origin = tile;
+        break;
+      }
+    }
+  }
+  auto dest = gameboard_.at(row).at(column);
+  auto found = findPath(origin, dest);
+  if (found)
+  {
+    dest->movePlayerToTile(player);
+    origin->removePlayerFromTile(player);
+    if (origin->getPlayers().empty())
+    {
+      tiles_containing_players_.erase(origin);
+    }
+  }
+  else
+  {
+    throw ImpossibleMove();
+  }
+}
