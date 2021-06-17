@@ -232,7 +232,6 @@ void Game::movePlayer(const shared_ptr<Player>& player, int direction, int steps
       if (player_in_tile == player)
       {
         Coordinates pos = getCoordsOf(tile);
-        cout << pos.row_ << " and " << pos.column_ << endl;
         //        check if move is valid checkvalidmove(coords,direction,steps)
         if (checkMoveIsValid(pos, direction, steps))
         {

@@ -190,7 +190,6 @@ bool IOLoop::executeGo()
         {
           throw InvalidParameter(y);
         }
-        cout << "Debug call backend" << endl;
         game_.goTo(current_player_, x - 1, y - 1);
         if (print_map_)
         {
