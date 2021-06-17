@@ -136,3 +136,23 @@ void Tile::removePlayerFromTile(const shared_ptr<Player>& player)
 {
   players_on_tile_.erase(std::find(players_on_tile_.begin(), players_on_tile_.end(), player));
 }
+
+void Tile::setGScore(double score)
+{
+  g_score_ = score;
+}
+
+void Tile::setFScore(double score)
+{
+  f_score_ = score;
+}
+
+double Tile::getGScore() const
+{
+  return g_score_;
+}
+
+double Tile::getFScore() const
+{
+  return f_score_;
+}
