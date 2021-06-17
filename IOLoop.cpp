@@ -114,6 +114,8 @@ void IOLoop::printMap()
   game_.printMap();
   checkTreasurePrint();
 }
+
+//---------------------------------------------------------------------------------------------------------------------
 bool IOLoop::executePlay()
 {
   if (command_ == "play")
@@ -192,8 +194,7 @@ bool IOLoop::executeGo()
         {
           throw InvalidParameter(y);
         }
-        cout << "Debug call backend" << endl;
-        // backend call:
+        game_.goTo(current_player_, x - 1, y - 1);
         if (print_map_)
         {
           printMap();

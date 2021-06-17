@@ -14,7 +14,9 @@
 #ifndef OOP1SS21_A2_135_GAME
 #define OOP1SS21_A2_135_GAME
 
+#include <limits>
 #include <memory>
+#include <queue>
 #include <stack>
 #include <unordered_set>
 
@@ -42,6 +44,12 @@ struct ForbiddenMove
   size_t position = 10;
 };
 
+typedef struct _Coordinates_
+{
+  size_t row_;
+  size_t column_;
+} Coordinates;
+
 //----------------------------------------------------------------------------------------------------------------------
 class Game
 {
@@ -58,6 +66,12 @@ private:
   unordered_set<shared_ptr<Tile>> tiles_containing_players_;
   ForbiddenMove forbidden_move_;
   shared_ptr<Tile> free_tile_;
+  Coordinates origin_;
+  Coordinates current_pos_;
+  Coordinates destination_;
+  shared_ptr<Tile> origin_tile_;
+  shared_ptr<Tile> destination_tile_;
+
   int playercount_;
 
   //<<<<<Constants>>>>>
@@ -177,7 +191,7 @@ public:
   ///
   /// @return true if the move is valid otherwise false
   //
-  bool checkMoveIsValid(int* rowcol, int direction, int steps);
+  bool checkMoveIsValid(const Coordinates& rowcol, int direction, int steps);
 
   //------------------------------------------------------------------------------------------------------------------
   ///
@@ -262,6 +276,25 @@ public:
   void populateTiles(vector<shared_ptr<Tile>>& movable_tiles, vector<shared_ptr<Treasure>>& static_treasures);
 
   unordered_set<shared_ptr<Tile>> getTilesContainingPlayers() { return tiles_containing_players_; }
+
+  //------------------------------------------------------------------------------------------------------------------
+  vector<shared_ptr<Tile>> neighbours_of();
+
+  //------------------------------------------------------------------------------------------------------------------
+  double heuristic(const shared_ptr<Tile>& from_f, const shared_ptr<Tile>& to_f);
+
+  //------------------------------------------------------------------------------------------------------------------
+  bool findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& to_item);
+
+  //------------------------------------------------------------------------------------------------------------------
+  template <typename T>
+  bool isInQueue(T queue, const shared_ptr<Tile>& f);
+
+  //------------------------------------------------------------------------------------------------------------------
+  Coordinates getCoordsOf(const shared_ptr<Tile>& tile);
+
+  //------------------------------------------------------------------------------------------------------------------
+  void goTo(const shared_ptr<Player>& player, size_t row, size_t column);
 };
 
 #endif // OOP1SS21_A2_135_Game
