@@ -93,7 +93,8 @@ void IOLoop::executeCommand()
       throw WrongNumberOfArguments();
     }
     if (executeQuitGame() || executeShowFreeTile() || executeRotate() || executeWASDAndArrowKeys() || executeGo() ||
-        executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield() || executeWhoami())
+        executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield() || executePlay() ||
+        executeWhoami())
     {
       return;
     }
@@ -112,6 +113,22 @@ void IOLoop::printMap()
 {
   game_.printMap();
   checkTreasurePrint();
+}
+
+//---------------------------------------------------------------------------------------------------------------------
+bool IOLoop::executePlay()
+{
+  if (command_ == "play")
+  {
+    // cout << "Debug play: " << endl;
+    auto ai_ = AI(game_, current_player_);
+    ai_.printInfo();
+    // cout << ai_.getLifeTime() << endl;
+    // std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    // cout << ai_.getLifeTime() << endl;
+    return true;
+  }
+  return false;
 }
 //---------------------------------------------------------------------------------------------------------------------
 bool IOLoop::executeWhoami()
@@ -161,6 +178,30 @@ bool IOLoop::executeGo()
   size_t steps = 0;
   if (command_ == "go")
   {
+    if (tokens_.size() == 3)
+    { // check for go with coords:
+      if (isPositiveNumber(tokens_.at(FIRST_PARAMETER_INPUT)) == true &&
+          isPositiveNumber(tokens_.at(SECOND_PARAMETER_INPUT)) == true && tokens_.at(1).size() < 2 &&
+          tokens_.at(2).size() < 2)
+      {
+        size_t x = stol(tokens_.at(FIRST_PARAMETER_INPUT));
+        size_t y = stol(tokens_.at(SECOND_PARAMETER_INPUT));
+        if (x < 1 || x > 7)
+        {
+          throw InvalidParameter(x);
+        }
+        else if (y < 1 || y > 7)
+        {
+          throw InvalidParameter(y);
+        }
+        game_.goTo(current_player_, x - 1, y - 1);
+        if (print_map_)
+        {
+          printMap();
+        }
+        return true; // if no exception
+      }
+    }
     auto direction_input = tokens_.at(FIRST_PARAMETER_INPUT);
     if (!isFirstParameterValid())
     {
@@ -170,7 +211,7 @@ bool IOLoop::executeGo()
     {
       steps = 1;
     }
-    else if (tokens_.size() == 3) // go with optional steps
+    else if (tokens_.size() == 3) // go with optional steps or coords
     {
       auto steps_input = tokens_.at(SECOND_PARAMETER_INPUT);
       // intijk July 5th 2015

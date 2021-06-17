@@ -14,6 +14,7 @@
 #include "Game.hpp"
 #include <algorithm>
 #include <iostream>
+#include <queue>
 
 //---------------------------------------------------------------------------------------------------------------------
 Game::Game(int playercount) : playercount_{playercount}
@@ -217,42 +218,24 @@ void Game::movePlayer(const shared_ptr<Player>& player, int direction, int steps
 {
   shared_ptr<Tile> new_tile = nullptr;
   bool found = false;
+
+  auto odd = direction % 2;
+  //  moving down 1 moving up -1, 0 not moving vertically
+  int row_step = odd ? ((direction - odd) ? (-1) : (1)) : 0;
+  //  moving right 1 moving left -1, 0 not moving horizontally
+  int col_step = odd ? 0 : ((direction) ? (-1) : (1));
+
   for (const auto& tile : tiles_containing_players_)
   {
     for (const auto& player_in_tile : tile->getPlayers())
     {
       if (player_in_tile == player)
       {
-        int coords[2] = {};
-        for (auto row : gameboard_)
-        {
-          auto iter = find(row.begin(), row.end(), tile);
-          if (iter != row.end())
-          {
-            coords[1] = std::distance(row.begin(), iter);
-            break;
-          }
-          coords[0] = coords[0] + 1;
-        }
+        Coordinates pos = getCoordsOf(tile);
         //        check if move is valid checkvalidmove(coords,direction,steps)
-        if (checkMoveIsValid(coords, direction, steps))
+        if (checkMoveIsValid(pos, direction, steps))
         {
-          if (direction == MOVE_DIRECTION_RIGHT)
-          {
-            new_tile = gameboard_.at(coords[0]).at(coords[1] + steps);
-          }
-          else if (direction == MOVE_DIRECTION_DOWN)
-          {
-            new_tile = gameboard_.at(coords[0] + steps).at(coords[1]);
-          }
-          else if (direction == MOVE_DIRECTION_LEFT)
-          {
-            new_tile = gameboard_.at(coords[0]).at(coords[1] - steps);
-          }
-          else if (direction == MOVE_DIRECTION_UP)
-          {
-            new_tile = gameboard_.at(coords[0] - steps).at(coords[1]);
-          }
+          new_tile = gameboard_.at(pos.row_ + row_step * steps).at(pos.column_ + col_step * steps);
           new_tile->movePlayerToTile(player);
           tile->removePlayerFromTile(player);
           if (tile->getPlayers().empty())
@@ -280,25 +263,26 @@ void Game::movePlayer(const shared_ptr<Player>& player, int direction, int steps
 }
 
 //---------------------------------------------------------------------------------------------------------------------
-bool Game::checkMoveIsValid(int* rowcol, int direction, int steps)
+bool Game::checkMoveIsValid(const Coordinates& pos, int direction, int steps)
 {
   auto odd = direction % 2;
   //  moving down 1 moving up -1, 0 not moving vertically
   int row_step = odd ? ((direction - odd) ? (-1) : (1)) : 0;
   //  moving right 1 moving left -1, 0 not moving horizontally
   int col_step = odd ? 0 : ((direction) ? (-1) : (1));
-  auto current = gameboard_.at(rowcol[0]).at(rowcol[1]);
+  auto current = gameboard_.at(pos.row_).at(pos.column_);
   //  Static cast conversion is valid because if the int were negative the check just before would have caught it
-  if ((-1 > (rowcol[0] + row_step * steps)) ||
-      (static_cast<size_t>(rowcol[0] + row_step * steps) >= (gameboard_.size())) ||
-      (-1 > (rowcol[1] + col_step * steps)) ||
-      (static_cast<size_t>(rowcol[1] + col_step * steps) >= (gameboard_.size())))
+  if ((-1 > (static_cast<long>(pos.row_) + row_step * steps)) ||
+      (static_cast<size_t>(pos.row_ + row_step * steps) >= (gameboard_.size())) ||
+      (-1 > (static_cast<long>(pos.column_) + col_step * steps)) ||
+      (static_cast<size_t>(pos.column_ + col_step * steps) >= (gameboard_.size())))
   {
+
     return false;
   }
   for (int i = 0; i < steps; i++)
   {
-    auto next = gameboard_.at(rowcol[0] + row_step * (i + 1)).at(rowcol[1] + col_step * (i + 1));
+    auto next = gameboard_.at(pos.row_ + row_step * (i + 1)).at(pos.column_ + col_step * (i + 1));
     auto current_string = current->getTileString().at(2 + row_step * 2);
     auto next_string = next->getTileString().at(2 - row_step * 2);
     bool passed = false;
@@ -588,4 +572,181 @@ void Game::populateTiles(vector<shared_ptr<Tile>>& movable_tiles, vector<shared_
   //    assignment of the free tile
   free_tile_ = movable_tiles.back();
   movable_tiles.pop_back();
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+bool Game::findPath(const shared_ptr<Tile>& from_item, const shared_ptr<Tile>& to_item)
+{
+  //  This is my implementation of the end A* path-finding algorithm
+  //  Pseudo-code is on Wikipedia: https://en.wikipedia.org/wiki/A*_search_algorithm
+  //  cleans and prepares the fields for multiple searches
+  for (const auto& vec : gameboard_)
+  {
+    for (const auto& tile : vec)
+    {
+      if (tile)
+      {
+        tile->resetScores();
+      }
+    }
+  }
+
+  //  cite https://en.cppreference.com/w/cpp/container/priority_queue
+  auto cmp = [](const shared_ptr<Tile>& left, const shared_ptr<Tile>& right)
+  { return (left->getFScore()) > (right->getFScore()); };
+  std::priority_queue<shared_ptr<Tile>, std::vector<shared_ptr<Tile>>, decltype(cmp)> open_set_(cmp);
+  //  end cite
+  origin_tile_ = from_item;
+  destination_tile_ = to_item;
+  origin_ = getCoordsOf(from_item);
+  destination_ = getCoordsOf(to_item);
+  from_item->setGScore(0.0);
+  from_item->setFScore(heuristic(from_item, to_item));
+  open_set_.push(from_item);
+
+  while (!open_set_.empty())
+  {
+    auto current = open_set_.top();
+    current_pos_ = getCoordsOf(current);
+    open_set_.pop();
+    if (current == to_item)
+    {
+      return true;
+    }
+    for (const auto& neighbour : neighbours_of())
+    {
+      //      cout << "F Score " << neighbour->getFScore() << endl;
+      if (neighbour)
+      {
+        double tentative_g_score = current->getGScore() + 1;
+        if (tentative_g_score < neighbour->getGScore())
+        {
+          neighbour->setGScore(tentative_g_score);
+          neighbour->setFScore(tentative_g_score + heuristic(neighbour, to_item));
+          if (!isInQueue(open_set_, neighbour))
+          {
+            open_set_.push(neighbour);
+          }
+        }
+      }
+    }
+  }
+  return false;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+double Game::heuristic(const shared_ptr<Tile>& from_f, const shared_ptr<Tile>& to_f)
+{
+  auto origin = getCoordsOf(from_f);
+  auto destination = destination_;
+  if (to_f != destination_tile_)
+  {
+    destination = getCoordsOf(to_f);
+  }
+  double h = (origin.row_ > destination.row_ ? origin.row_ - destination.row_ : destination.row_ - origin.row_) +
+             (origin.column_ > destination.column_ ? origin.column_ - destination.column_
+                                                   : destination.column_ - origin.column_);
+  return h;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+std::vector<shared_ptr<Tile>> Game::neighbours_of()
+{
+  size_t row = current_pos_.row_;
+  size_t col = current_pos_.column_;
+  std::vector<shared_ptr<Tile>> neighbours;
+
+  if (row < NUMBER_OF_ROWS - 1)
+  {
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_DOWN, 1))
+    {
+      neighbours.push_back(gameboard_.at(row + 1).at(col));
+    }
+  }
+  if (row > 0)
+  {
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_UP, 1))
+    {
+      neighbours.push_back(gameboard_.at(row - 1).at(col));
+    }
+  }
+  if (col < NUMBER_OF_COLUMNS - 1)
+  {
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_RIGHT, 1))
+    {
+      neighbours.push_back(gameboard_.at(row).at(col + 1));
+    }
+  }
+  if (col > 0)
+  {
+    if (checkMoveIsValid(current_pos_, MOVE_DIRECTION_LEFT, 1))
+    {
+      neighbours.push_back(gameboard_.at(row).at(col - 1));
+    }
+  }
+  return neighbours;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+template <typename T>
+bool Game::isInQueue(T queue, const shared_ptr<Tile>& f)
+{
+  while (!queue.empty())
+  {
+    if (queue.top() == f)
+    {
+      return true;
+    }
+    queue.pop();
+  }
+  return false;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+Coordinates Game::getCoordsOf(const shared_ptr<Tile>& tile)
+{
+  Coordinates pos{0, 0};
+  for (auto row : gameboard_)
+  {
+    auto iter = find(row.begin(), row.end(), tile);
+    if (iter != row.end())
+    {
+      pos.column_ = std::distance(row.begin(), iter);
+      break;
+    }
+    pos.row_ = pos.row_ + 1;
+  }
+  return pos;
+}
+
+void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t column)
+{
+  shared_ptr<Tile> origin;
+  for (const auto& tile : tiles_containing_players_)
+  {
+    for (const auto& player_on_tile : tile->getPlayers())
+    {
+      if (player == player_on_tile)
+      {
+        origin = tile;
+        break;
+      }
+    }
+  }
+  auto dest = gameboard_.at(row).at(column);
+  auto found = findPath(origin, dest);
+  if (found)
+  {
+    dest->movePlayerToTile(player);
+    origin->removePlayerFromTile(player);
+    if (origin->getPlayers().empty())
+    {
+      tiles_containing_players_.erase(origin);
+    }
+  }
+  else
+  {
+    throw ImpossibleMove();
+  }
+  tiles_containing_players_.insert(dest);
 }

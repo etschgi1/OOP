@@ -15,6 +15,8 @@
 
 #include <string>
 #include <vector>
+#include <limits>
+
 
 #include "Bitmap.hpp"
 #include "Player.hpp"
@@ -23,6 +25,7 @@
 using std::shared_ptr;
 using std::string;
 using std::vector;
+
 
 // some enums used by the Tile class
 enum class TileType
@@ -83,6 +86,9 @@ protected:
   Rotation rotation_;
   vector<shared_ptr<Player>> players_on_tile_;
   vector<vector<vector<string>>>* repr_;
+  double f_score_ = std::numeric_limits<double>::infinity();
+  double g_score_ = std::numeric_limits<double>::infinity();
+
 
 public:
   //------------------------------------------------------------------------------------------------------------------
@@ -198,6 +204,16 @@ public:
   /// @return no return
   //
   void removePlayerFromTile(const shared_ptr<Player>& player);
+
+  void setGScore(double score);
+
+  void setFScore(double score);
+
+  [[nodiscard]] double getGScore() const;
+
+  [[nodiscard]] double getFScore() const;
+
+  void resetScores();
 };
 
 #endif // OOP1SS21_A2_135_TILE_H

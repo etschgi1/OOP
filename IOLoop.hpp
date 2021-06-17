@@ -14,6 +14,7 @@
 #ifndef OOP1SS21_A2_135_IOLOOP_HPP
 #define OOP1SS21_A2_135_IOLOOP_HPP
 
+#include "AI.hpp"
 #include "Game.hpp"
 #include "Player.hpp"
 #include "Request.hpp"
@@ -77,6 +78,7 @@ class IOLoop
       {"exit", "1"},
       {"whoami", "1"},
       {"Whoami", "1"},
+      {"play", "1"},
       // all available exit commands_
       {"gamefield", "2", "on", "off"},
       {"gamefield", "1"},
@@ -114,7 +116,7 @@ class IOLoop
       // all valid commands_. First part represents the basic tokens_, the second one the valid number of
       // parameters and
       // the rest all valid paremeters.
-      Request{"quit"}, Request{"exit"}, Request{"whoami"}, Request{"Whoami"},
+      Request{"quit"}, Request{"exit"}, Request{"whoami"}, Request{"Whoami"}, Request{"play"},
       // all available exit commands_
       Request{"gamefield", 2, {"on", "off"}}, Request{"gamefield"}, Request{"g", 2, {"on", "off"}}, Request{"g"},
       // commands_ for showing the gamefield
@@ -174,6 +176,7 @@ public:
   void runGame();
 
 private:
+  bool executePlay();
   bool executeWhoami();
   //------------------------------------------------------------------------------------------------------------------
   ///
