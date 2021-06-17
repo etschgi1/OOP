@@ -118,11 +118,12 @@ bool IOLoop::executePlay()
 {
   if (command_ == "play")
   {
-    cout << "Debug play: " << endl;
-    auto ai_ = AI(game_);
-    cout << ai_.getLifeTime() << endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(50));
-    cout << ai_.getLifeTime() << endl;
+    // cout << "Debug play: " << endl;
+    auto ai_ = AI(game_, current_player_);
+    ai_.printInfo();
+    // cout << ai_.getLifeTime() << endl;
+    // std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    // cout << ai_.getLifeTime() << endl;
     return true;
   }
   return false;
@@ -193,8 +194,12 @@ bool IOLoop::executeGo()
         }
         cout << "Debug call backend" << endl;
         // backend call:
+        if (print_map_)
+        {
+          printMap();
+        }
+        return true; // if no exception
       }
-      return true; // if no exception
     }
     auto direction_input = tokens_.at(FIRST_PARAMETER_INPUT);
     if (!isFirstParameterValid())

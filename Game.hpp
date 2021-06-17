@@ -260,6 +260,8 @@ public:
   ///
   //
   void populateTiles(vector<shared_ptr<Tile>>& movable_tiles, vector<shared_ptr<Treasure>>& static_treasures);
+
+  unordered_set<shared_ptr<Tile>> getTilesContainingPlayers() { return tiles_containing_players_; }
 };
 
 #endif // OOP1SS21_A2_135_Game
