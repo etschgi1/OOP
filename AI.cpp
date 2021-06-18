@@ -43,7 +43,11 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{cur
         try
         {
           auto starttile = std::dynamic_pointer_cast<StartTile>(tile);
-          if (starttile->getPlayerColor() == player_->getColor())
+          if (starttile == nullptr)
+          {
+            continue;
+          }
+          else if (starttile->getPlayerColor() == player_->getColor())
           {
             goal_tile = tile;
           }
