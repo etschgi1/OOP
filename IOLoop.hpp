@@ -52,6 +52,7 @@ class IOLoop
   bool show_treasure_ = false;
   bool game_over_ = false;
   bool didnt_execute_ = false;
+  bool auto_player42 = false;
 
   //!---------Class Constants---------
   const size_t MOVE_DIRECTION_UP = 3;
@@ -79,6 +80,7 @@ class IOLoop
       {"whoami", "1"},
       {"Whoami", "1"},
       {"play", "1"},
+      {"ILoveSegfaults", "1"},
       // all available exit commands_
       {"gamefield", "2", "on", "off"},
       {"gamefield", "1"},
@@ -116,7 +118,8 @@ class IOLoop
       // all valid commands_. First part represents the basic tokens_, the second one the valid number of
       // parameters and
       // the rest all valid paremeters.
-      Request{"quit"}, Request{"exit"}, Request{"whoami"}, Request{"Whoami"}, Request{"play"},
+      Request{"ILoveSegfaults"}, Request{"quit"}, Request{"exit"}, Request{"whoami"}, Request{"Whoami"},
+      Request{"play"},
       // all available exit commands_
       Request{"gamefield", 2, {"on", "off"}}, Request{"gamefield"}, Request{"g", 2, {"on", "off"}}, Request{"g"},
       // commands_ for showing the gamefield
@@ -370,6 +373,15 @@ private:
   ///
   //
   bool commandExists();
+  bool autoplayer42()
+  {
+    if (command_ == "ILoveSegfaults")
+    {
+      auto_player42 = true;
+      return true;
+    }
+    return false;
+  }
 };
 
 #endif // OOP1SS21_A2_135_IOLOOP_HPP

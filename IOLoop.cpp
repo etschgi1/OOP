@@ -47,11 +47,18 @@ void IOLoop::runGame()
       {
         do
         {
-          cout << current_color_ << " > ";
-          getline(cin, input_);
-          if (cin.eof())
+          if (auto_player42)
           {
-            return;
+            input_ = "play";
+          }
+          else
+          {
+            cout << current_color_ << " > ";
+            getline(cin, input_);
+            if (cin.eof())
+            {
+              return;
+            }
           }
           tokens_ = parseCommand();
         } while (tokens_.empty());
@@ -70,6 +77,7 @@ void IOLoop::runGame()
         else
         {
           cout << "Invalid command: " << double_quote_ << command_ << double_quote_ << endl;
+          auto_player42 = false;
         }
       }
     }
@@ -94,7 +102,7 @@ void IOLoop::executeCommand()
     }
     if (executeQuitGame() || executeShowFreeTile() || executeRotate() || executeWASDAndArrowKeys() || executeGo() ||
         executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield() || executePlay() ||
-        executeWhoami())
+        executeWhoami() || autoplayer42())
     {
       return;
     }
