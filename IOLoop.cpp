@@ -47,11 +47,18 @@ void IOLoop::runGame()
       {
         do
         {
-          cout << current_color_ << " > ";
-          getline(cin, input_);
-          if (cin.eof())
+          if (auto_player42)
           {
-            return;
+            input_ = "play";
+          }
+          else
+          {
+            cout << current_color_ << " > ";
+            getline(cin, input_);
+            if (cin.eof())
+            {
+              return;
+            }
           }
           tokens_ = parseCommand();
         } while (tokens_.empty());
@@ -70,6 +77,7 @@ void IOLoop::runGame()
         else
         {
           cout << "Invalid command: " << double_quote_ << command_ << double_quote_ << endl;
+          auto_player42 = false;
         }
       }
     }
@@ -94,7 +102,7 @@ void IOLoop::executeCommand()
     }
     if (executeQuitGame() || executeShowFreeTile() || executeRotate() || executeWASDAndArrowKeys() || executeGo() ||
         executeInsert() || executeShowOrHideTreasure() || executeFinish() || executeGamefield() || executePlay() ||
-        executeWhoami())
+        executeWhoami() || autoplayer42())
     {
       return;
     }
@@ -122,10 +130,33 @@ bool IOLoop::executePlay()
   {
     // cout << "Debug play: " << endl;
     auto ai_ = AI(game_, current_player_);
+    ai_.run();
     ai_.printInfo();
     // cout << ai_.getLifeTime() << endl;
     // std::this_thread::sleep_for(std::chrono::milliseconds(50));
     // cout << ai_.getLifeTime() << endl;
+    input_ = ai_.getInsertCommand();
+    tokens_ = parseCommand();
+    command_ = tokens_.front();
+    // tokens_ = {"insert", "", ""};
+    // tokens_.at(1) = ai_.getInsertSidestring();
+    // tokens_.at(2) = ai_.getInsertPositionstring();
+    // cout << tokens_.at(1) << tokens_.at(2) << endl;
+    // command_ = "insert";
+    executeInsert();
+    if (ai_.getSuccess())
+    {
+      input_ = ai_.getGoCommand();
+      tokens_ = parseCommand();
+      command_ = tokens_.front();
+      // command_ = "go";
+      // tokens_ = {"go", "", ""};
+      // tokens_.at(1) = ai_.getGoalRowstring();
+      // tokens_.at(2) = ai_.getGoalColstring();
+      executeGo();
+    }
+    command_ = "finish";
+    executeFinish();
     return true;
   }
   return false;
@@ -194,7 +225,7 @@ bool IOLoop::executeGo()
         {
           throw InvalidParameter(y);
         }
-        game_.goTo(current_player_, x - 1, y - 1);
+        game_.goTo(current_player_, x - 1, y - 1, true);
         if (print_map_)
         {
           printMap();
@@ -479,7 +510,7 @@ void IOLoop::commandCurrentlyAllowed()
 {
   if (has_inserted_)
   {
-    if (command_.at(0) == 'i' || command_ == "rotate")
+    if (command_.at(0) == 'i' || command_ == "rotate" || command_ == "play")
       throw CurrentlyNotAllowedCommand(command_);
   }
   else if (!has_inserted_ &&

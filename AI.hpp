@@ -18,12 +18,14 @@ private:
   // ermergency fallback move
   char fall_back_side = 'b';
   unsigned long fall_back_pos;
-
+  bool success_flag = false;
   // inserts:
+  vector<char> insert_sides = {'t', 'l', 'b', 'r'};
   char insert_side;
   unsigned long insert_position;
 
   // field_goal
+  shared_ptr<Tile> goal_tile;
   unsigned long goal_row;
   unsigned long goal_col;
 
@@ -35,5 +37,18 @@ public:
   long getLifeTime();
   void printInfo();
   void executeCommands();
+  void run();
+  bool getSuccess() const { return success_flag; }
+  string getInsertSidestring() const
+  {
+    string out;
+    out.push_back(insert_side);
+    return out;
+  }
+  string getInsertPositionstring() const { return to_string(insert_position); }
+  string getGoalRowstring() const { return to_string(goal_row + 1); }
+  string getGoalColstring() const { return to_string(goal_col + 1); }
+  string getInsertCommand() const { return commands.at(0); }
+  string getGoCommand() const { return commands.at(1); }
 };
 #endif // OOP1SS21_A2_135_AI
