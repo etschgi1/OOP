@@ -212,6 +212,20 @@ char Game::getStartTileColor(int x, int y) const
   }
   return 'X';
 }
+vector<int> Game::getStartTileCoords(char color) const
+{
+  try
+  {
+    auto iter = find(player_colors_.begin(), player_colors_.end(), color);
+    auto index = std::distance(player_colors_.begin(), iter);
+    return start_tiles_.at(index);
+  }
+  catch (const std::exception& e)
+  {
+    std::cerr << "Aus getStartTileCoords " << e.what() << '\n';
+    return start_tiles_.at(4); // Absichtlicher Fehler
+  }
+}
 
 //---------------------------------------------------------------------------------------------------------------------
 void Game::movePlayer(const shared_ptr<Player>& player, int direction, int steps)
@@ -367,7 +381,11 @@ void Game::insertTile(vector<string> tokens, char side, size_t position)
   }
   forbidden_move_.position = position;
 }
-
+void Game::setForbiddenMove(char side, size_t position)
+{
+  forbidden_move_.side = side;
+  forbidden_move_.position = position;
+}
 //---------------------------------------------------------------------------------------------------------------------
 void Game::insertTileVertical(bool top, size_t position)
 {
@@ -705,6 +723,10 @@ bool Game::isInQueue(T queue, const shared_ptr<Tile>& f)
 //----------------------------------------------------------------------------------------------------------------------
 Coordinates Game::getCoordsOf(const shared_ptr<Tile>& tile)
 {
+  if (tile == nullptr)
+  {
+    throw CustomError("Invalid Nullptr passed to getCoordsOf");
+  }
   Coordinates pos{0, 0};
   for (auto row : gameboard_)
   {
@@ -719,7 +741,7 @@ Coordinates Game::getCoordsOf(const shared_ptr<Tile>& tile)
   return pos;
 }
 
-void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t column)
+void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t column, bool move_for_real)
 {
   shared_ptr<Tile> origin;
   for (const auto& tile : tiles_containing_players_)
@@ -737,6 +759,10 @@ void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t
   auto found = findPath(origin, dest);
   if (found)
   {
+    if (!move_for_real)
+    {
+      return; // if player should not be moved return without doing something
+    }
     dest->movePlayerToTile(player);
     origin->removePlayerFromTile(player);
     if (origin->getPlayers().empty())
@@ -749,4 +775,29 @@ void Game::goTo(const shared_ptr<Player>& player, const size_t row, const size_t
     throw ImpossibleMove();
   }
   tiles_containing_players_.insert(dest);
+}
+
+void Game::pseudoinsertTile(char side, size_t position)
+{
+  if (position != 2 && position != 4 && position != 6) // check if position is valid
+  {
+    throw InvalidPosition();
+  }
+  // first insert
+  switch (side)
+  {
+    case 't':
+      insertTileVertical(true, position);
+      break;
+    case 'b':
+      insertTileVertical(false, position);
+      break;
+    case 'r':
+      insertTileHorizontal(false, position);
+      break;
+    case 'l':
+      insertTileHorizontal(true, position);
+      break;
+  }
+  // side = opposite_sides_[side];
 }

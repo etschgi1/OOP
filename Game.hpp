@@ -15,6 +15,7 @@
 #define OOP1SS21_A2_135_GAME
 
 #include <limits>
+#include <map>
 #include <memory>
 #include <queue>
 #include <stack>
@@ -49,7 +50,7 @@ typedef struct _Coordinates_
   size_t row_;
   size_t column_;
 } Coordinates;
-
+class AI; // forward decleration
 //----------------------------------------------------------------------------------------------------------------------
 class Game
 {
@@ -87,6 +88,7 @@ private:
   const size_t NUMBER_OF_ROWS = 7;
   const size_t NUMBER_OF_COLUMNS = 7;
   const char SPACE_KEY = '\x20';
+
   //------------------------------------------------------------------------------------------------------------------
   ///
   /// Constructor
@@ -96,6 +98,17 @@ private:
   //
   explicit Game(int playercount);
 
+  //------------------------------------------------------------------------------------------------------------------
+  ///
+  /// Getter for playercount
+  ///
+  //
+  [[nodiscard]] size_t getPlayerCount() const { return playercount_; }
+
+public:
+  // sides
+  std::map<char, char> opposite_sides_ = {{'t', 'b'}, {'b', 't'}, {'l', 'r'}, {'r', 'l'}};
+  unsigned long getFordbiddenPosition() { return forbidden_move_.position; }
   //------------------------------------------------------------------------------------------------------------------
   ///
   /// Copy-Constructor
@@ -109,16 +122,6 @@ private:
   ///
   //
   Game& operator=(const Game&);
-
-  //------------------------------------------------------------------------------------------------------------------
-  ///
-  /// Getter for playercount
-  ///
-  //
-  [[nodiscard]] size_t getPlayerCount() const { return playercount_; }
-
-public:
-  unsigned long getFordbiddenPosition() { return forbidden_move_.position; }
   //------------------------------------------------------------------------------------------------------------------
   ///
   /// Destructor
@@ -294,7 +297,15 @@ public:
   Coordinates getCoordsOf(const shared_ptr<Tile>& tile);
 
   //------------------------------------------------------------------------------------------------------------------
-  void goTo(const shared_ptr<Player>& player, size_t row, size_t column);
+  // Move_for_real decides if player really moves
+  void goTo(const shared_ptr<Player>& player, size_t row, size_t column, bool move_for_real);
+
+  void pseudoinsertTile(char side, size_t position);
+  vector<int> getStartTileCoords(char color) const;
+  vector<vector<shared_ptr<Tile>>>& getgameboard() { return gameboard_; }
+  char getForbiddenSide() const { return forbidden_move_.side; }
+  void setForbiddenMove(char side, size_t position);
+  shared_ptr<Tile> getFreeTile() const { return free_tile_; }
 };
 
 #endif // OOP1SS21_A2_135_Game
