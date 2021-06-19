@@ -229,6 +229,11 @@ bool IOLoop::executeGo()
         }
         return true; // if no exception
       }
+      else if (isPositiveNumber(tokens_.at(FIRST_PARAMETER_INPUT)) == true &&
+               !isPositiveNumber(tokens_.at(SECOND_PARAMETER_INPUT)) == true)
+      {
+        throw InvalidParameter(tokens_.at(SECOND_PARAMETER_INPUT));
+      }
     }
     auto direction_input = tokens_.at(FIRST_PARAMETER_INPUT);
     if (!isFirstParameterValid())
