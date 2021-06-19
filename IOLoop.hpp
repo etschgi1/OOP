@@ -68,7 +68,7 @@ class IOLoop
   const size_t UPPER_INSERT_ROW_COL_BOUNDARY = 7;
   const size_t LOWER_INSERT_ROW_COL_BOUNDARY = 1;
   const string ALL_TREASURES_FOUND_MESSAGE = "All Treasures found, return to your startfield to win!";
-  const string TEAM_NAME = "ϾPlaceholderϿ¶";
+  const string TEAM_NAME = "Vectorious";
 
   //  Internal Vector containing valid commands before tile is inserted
   vector<string> invalid_before_insert_ = {"w",      "a",      "s",  "d", "\x1b[A", "\x1b[B",
