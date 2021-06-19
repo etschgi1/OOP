@@ -43,6 +43,7 @@ class IOLoop
   string input_;
   string command_;
   vector<string> params_;
+  size_t auto_counter = 0;
 
   //  <<<<<Internal Flags>>>>>       to determine when to do what e.g. if print_map_ flag set it should print the map
   bool done_with_the_move_ = false;
@@ -68,6 +69,7 @@ class IOLoop
   const size_t LOWER_INSERT_ROW_COL_BOUNDARY = 1;
   const string ALL_TREASURES_FOUND_MESSAGE = "All Treasures found, return to your startfield to win!";
   const string TEAM_NAME = "ϾPlaceholderϿ¶";
+
   //  Internal Vector containing valid commands before tile is inserted
   vector<string> invalid_before_insert_ = {"w",      "a",      "s",  "d", "\x1b[A", "\x1b[B",
                                            "\x1b[C", "\x1b[D", "go", "f", "finish"};

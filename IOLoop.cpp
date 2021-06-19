@@ -50,6 +50,7 @@ void IOLoop::runGame()
           if (auto_player42)
           {
             input_ = "play";
+            auto_counter++;
           }
           else
           {
@@ -128,31 +129,27 @@ bool IOLoop::executePlay()
 {
   if (command_ == "play")
   {
-    // cout << "Debug play: " << endl;
     auto ai_ = AI(game_, current_player_);
-    ai_.run();
-    ai_.printInfo();
-    // cout << ai_.getLifeTime() << endl;
-    // std::this_thread::sleep_for(std::chrono::milliseconds(50));
-    // cout << ai_.getLifeTime() << endl;
-    input_ = ai_.getInsertCommand();
-    tokens_ = parseCommand();
-    command_ = tokens_.front();
-    // tokens_ = {"insert", "", ""};
-    // tokens_.at(1) = ai_.getInsertSidestring();
-    // tokens_.at(2) = ai_.getInsertPositionstring();
-    // cout << tokens_.at(1) << tokens_.at(2) << endl;
-    // command_ = "insert";
-    executeInsert();
+
+    if (!has_inserted_)
+    {
+      ai_.run();
+      input_ = ai_.getInsertCommand();
+      tokens_ = parseCommand();
+      command_ = tokens_.front();
+      ai_.printInfo();
+      executeInsert();
+    }
+    else
+    {
+      ai_.onlyGo();
+      ai_.printInfo();
+    }
     if (ai_.getSuccess())
     {
       input_ = ai_.getGoCommand();
       tokens_ = parseCommand();
       command_ = tokens_.front();
-      // command_ = "go";
-      // tokens_ = {"go", "", ""};
-      // tokens_.at(1) = ai_.getGoalRowstring();
-      // tokens_.at(2) = ai_.getGoalColstring();
       executeGo();
     }
     command_ = "finish";
@@ -429,6 +426,11 @@ bool IOLoop::executeFinish()
     {
       cout << "The Player " << winning_player << " has won the game!" << endl;
       game_over_ = true;
+      if (auto_counter > 11)
+      {
+        cout << "[Debug] Total play moves made: " << auto_counter << endl
+             << "[Debug] Per player (aprox.): " << auto_counter / game_.getPlayers().size() << endl;
+      }
       return true;
     }
     done_with_the_move_ = true;
@@ -510,7 +512,7 @@ void IOLoop::commandCurrentlyAllowed()
 {
   if (has_inserted_)
   {
-    if (command_.at(0) == 'i' || command_ == "rotate" || command_ == "play")
+    if (command_.at(0) == 'i' || command_ == "rotate")
       throw CurrentlyNotAllowedCommand(command_);
   }
   else if (!has_inserted_ &&

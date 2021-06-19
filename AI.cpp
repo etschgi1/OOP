@@ -10,7 +10,7 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{cur
   commands.push_back(out);
   commands.push_back("go 0 0");
   commands.push_back("finish");
-
+  success_flag = false;
   // see if player has treasure and is not done otherwise set goal to start field
   if (!player_->getStack().empty())
   {
@@ -77,12 +77,26 @@ void AI::printInfo()
     cout << INFO_PRINTOUT << command << endl;
   }
 }
-void AI::executeCommands()
+void AI::onlyGo()
 {
-
-  return;
+  commands = {"", "finish"};
+  try
+  {
+    Coordinates goal_coords = game_.getCoordsOf(goal_tile);
+    goal_row = goal_coords.row_;
+    goal_col = goal_coords.column_;
+    game_.goTo(player_, goal_row, goal_col, false);
+    string go_command = "go " + to_string(goal_row + 1) + " " + to_string(goal_col + 1);
+    commands.at(0) = go_command;
+    success_flag = true;
+    only_go_flag = true;
+  }
+  catch (ImpossibleMove)
+  {
+    commands = {"finish"};
+    return;
+  }
 }
-void AI::setBestInsert(char side, size_t position) {}
 
 void AI::run()
 {
