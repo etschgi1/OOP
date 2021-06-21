@@ -113,6 +113,9 @@ void AI::run()
         {
           if (goal_tile == game_.getFreeTile())
           {
+            //! zurückschieben nicht vergessen!!!! falls move impossible
+            side = game_.opposite_sides_[side];
+            game_.pseudoinsertTile(side, position);
             continue; // pathfinding wenn free tile rausgeschoben sinnlos.
           }
           Coordinates goal_coords = game_.getCoordsOf(goal_tile);
