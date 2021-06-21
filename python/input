@@ -1,0 +1,99 @@
+insert b 2
+finish
+insert left 4
+finish
+insert b 6
+finish
+insert left 2
+finish
+insert b 4
+finish
+insert top 2
+finish
+insert b 4
+finish
+insert bottom 2
+finish
+insert b 4
+finish
+insert right 2
+finish
+insert b 4
+finish
+insert left 4
+finish
+insert b 6
+finish
+insert top 4
+finish
+insert l 2
+go 5 6
+finish
+insert left 6
+finish
+insert l 6
+go 5 3
+finish
+insert top 6
+finish
+insert t 6
+go 4 6
+finish
+insert right 6
+finish
+insert t 6
+go 6 7
+finish
+insert right 2
+finish
+insert b 4
+finish
+insert left 4
+finish
+insert t 6
+go 5 4
+finish
+insert right 6
+finish
+insert b 4
+go 3 7
+finish
+insert top 6
+finish
+insert r 4
+go 3 3
+finish
+insert top 6
+finish
+insert t 2
+go 2 4
+finish
+insert bottom 6
+finish
+insert t 2
+go 3 2
+finish
+insert left 6
+finish
+insert t 2
+go 3 6
+finish
+insert bottom 4
+finish
+insert b 6
+finish
+insert left 2
+finish
+insert l 2
+go 1 2
+finish
+insert left 6
+finish
+insert b 2
+finish
+insert left 4
+finish
+insert b 6
+finish
+insert left 4
+finish
