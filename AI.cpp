@@ -17,8 +17,25 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{std
   if (!player_->getStack().empty())
   {
     auto player_treasure = player_->getStack().top();
+    auto done = false;
+    auto free_tile = game_.getFreeTile();
+    if (free_tile->getType() == TileType::T)
+    {
+      auto treasure_tile = std::dynamic_pointer_cast<TreasureTile>(free_tile);
+      auto treasure_on_tile = treasure_tile->getTreasure();
+      if (player_treasure == treasure_on_tile)
+      {
+        goal_tile = free_tile;
+        done = true;
+      }
+    }
+
     for (const auto& row : game_.getgameboard())
     {
+      if (done)
+      {
+        break;
+      }
       for (const auto& tile : row)
       {
         if (tile->getType() == TileType::T) // only T tiles are Treasure tiles
@@ -28,7 +45,10 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{std
           if (player_treasure == treasure_on_tile)
           {
             // correct tile
+//            cout << player_treasure->getName() << treasure_on_tile->getName() << "&&&&&&&&&" << endl;
             goal_tile = tile;
+            done = true;
+            break;
             // goal_row = coords.row_;
             // goal_col = coords.column_;
           }
@@ -139,7 +159,7 @@ void AI::run()
           game_.pseudoinsertTile(side, position);
           return;
         }
-        catch (ImpossibleMove)
+        catch (ImpossibleMove& e)
         {
           //! zurückschieben nicht vergessen!!!! falls move impossible
           side = game_.opposite_sides_[side];

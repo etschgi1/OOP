@@ -1,132 +1,1282 @@
+[x] Starting local process 'bin/135'
+[+] Starting local process 'bin/135': pid 233
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 57B
+[x] Receiving all data: 273B
+[x] Receiving all data: 2.17KB
+[x] Receiving all data: 4.30KB
+[+] Receiving all data: Done (4.30KB)
+[*] Process 'bin/135' stopped with exit code 0 (pid 233)
+[x] Starting local process 'bin/11111'
+[+] Starting local process 'bin/11111': pid 234
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 57B
+[x] Receiving all data: 1.22KB
+[x] Receiving all data: 4.30KB
+[*] Process 'bin/11111' stopped with exit code 0 (pid 234)
+[+] Receiving all data: Done (4.30KB)
+[x] Starting local process 'bin/22222'
+[+] Starting local process 'bin/22222': pid 235
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 57B
+[x] Receiving all data: 1.39KB
+[x] Receiving all data: 4.30KB
+[*] Process 'bin/22222' stopped with exit code 0 (pid 235)
+[+] Receiving all data: Done (4.30KB)
+Starting new game with seed 2642558127: 135 vs 11111
+[x] bin/135 vs. bin/11111
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135': pid 236
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111': pid 237
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 238
+[x] bin/135 vs. bin/11111: round 1 PLAYER_1 thinking...
 [*] round 1 PLAYER_1: ['insert b 2', 'finish']
 [x] bin/135 vs. bin/11111: round 1 PLAYER_1: ['insert b 2', 'finish']
 [x] bin/135 vs. bin/11111: round 1 PLAYER_2 thinking...
-[*] round 1 PLAYER_2: ['insert left 4', 'finish']
-[x] bin/135 vs. bin/11111: round 1 PLAYER_2: ['insert left 4', 'finish']
+[*] round 1 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 1 PLAYER_2: ['insert right 4', 'finish']
 [x] bin/135 vs. bin/11111: round 2 PLAYER_1 thinking...
 [*] round 2 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 2 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 2 PLAYER_2 thinking...
-[*] round 2 PLAYER_2: ['insert left 2', 'finish']
-[x] bin/135 vs. bin/11111: round 2 PLAYER_2: ['insert left 2', 'finish']
+[*] round 2 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/135 vs. bin/11111: round 2 PLAYER_2: ['insert bottom 2', 'finish']
 [x] bin/135 vs. bin/11111: round 3 PLAYER_1 thinking...
 [*] round 3 PLAYER_1: ['insert b 4', 'finish']
 [x] bin/135 vs. bin/11111: round 3 PLAYER_1: ['insert b 4', 'finish']
 [x] bin/135 vs. bin/11111: round 3 PLAYER_2 thinking...
-[*] round 3 PLAYER_2: ['insert top 2', 'finish']
-[x] bin/135 vs. bin/11111: round 3 PLAYER_2: ['insert top 2', 'finish']
+[*] round 3 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/135 vs. bin/11111: round 3 PLAYER_2: ['insert right 6', 'finish']
 [x] bin/135 vs. bin/11111: round 4 PLAYER_1 thinking...
-[*] round 4 PLAYER_1: ['insert b 4', 'finish']
-[x] bin/135 vs. bin/11111: round 4 PLAYER_1: ['insert b 4', 'finish']
+[*] round 4 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/11111: round 4 PLAYER_1: ['insert b 2', 'finish']
 [x] bin/135 vs. bin/11111: round 4 PLAYER_2 thinking...
-[*] round 4 PLAYER_2: ['insert bottom 2', 'finish']
-[x] bin/135 vs. bin/11111: round 4 PLAYER_2: ['insert bottom 2', 'finish']
+[*] round 4 PLAYER_2: ['insert top 6', 'finish']
+[x] bin/135 vs. bin/11111: round 4 PLAYER_2: ['insert top 6', 'finish']
 [x] bin/135 vs. bin/11111: round 5 PLAYER_1 thinking...
-[*] round 5 PLAYER_1: ['insert b 4', 'finish']
-[x] bin/135 vs. bin/11111: round 5 PLAYER_1: ['insert b 4', 'finish']
+[*] round 5 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/11111: round 5 PLAYER_1: ['insert b 2', 'finish']
 [x] bin/135 vs. bin/11111: round 5 PLAYER_2 thinking...
-[*] round 5 PLAYER_2: ['insert right 2', 'finish']
-[x] bin/135 vs. bin/11111: round 5 PLAYER_2: ['insert right 2', 'finish']
+[*] round 5 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/135 vs. bin/11111: round 5 PLAYER_2: ['insert top 4', 'finish']
 [x] bin/135 vs. bin/11111: round 6 PLAYER_1 thinking...
-[*] round 6 PLAYER_1: ['insert b 4', 'finish']
-[x] bin/135 vs. bin/11111: round 6 PLAYER_1: ['insert b 4', 'finish']
+[*] round 6 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 6 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 6 PLAYER_2 thinking...
-[*] round 6 PLAYER_2: ['insert left 4', 'finish']
-[x] bin/135 vs. bin/11111: round 6 PLAYER_2: ['insert left 4', 'finish']
+[*] round 6 PLAYER_2: ['insert top 2', 'finish']
+[x] bin/135 vs. bin/11111: round 6 PLAYER_2: ['insert top 2', 'finish']
 [x] bin/135 vs. bin/11111: round 7 PLAYER_1 thinking...
-[*] round 7 PLAYER_1: ['insert b 6', 'finish']
-[x] bin/135 vs. bin/11111: round 7 PLAYER_1: ['insert b 6', 'finish']
+[*] round 7 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 7 PLAYER_1: ['insert b 4', 'finish']
 [x] bin/135 vs. bin/11111: round 7 PLAYER_2 thinking...
-[*] round 7 PLAYER_2: ['insert top 4', 'finish']
-[x] bin/135 vs. bin/11111: round 7 PLAYER_2: ['insert top 4', 'finish']
+[*] round 7 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 7 PLAYER_2: ['insert right 4', 'finish']
 [x] bin/135 vs. bin/11111: round 8 PLAYER_1 thinking...
-[*] round 8 PLAYER_1: ['insert l 2', 'go 5 6', 'finish']
-[x] bin/135 vs. bin/11111: round 8 PLAYER_1: ['insert l 2', 'go 5 6', 'finish']
+[*] round 8 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 8 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 8 PLAYER_2 thinking...
-[*] round 8 PLAYER_2: ['insert left 6', 'finish']
-[x] bin/135 vs. bin/11111: round 8 PLAYER_2: ['insert left 6', 'finish']
+[*] round 8 PLAYER_2: ['insert left 4', 'finish']
+[x] bin/135 vs. bin/11111: round 8 PLAYER_2: ['insert left 4', 'finish']
 [x] bin/135 vs. bin/11111: round 9 PLAYER_1 thinking...
-[*] round 9 PLAYER_1: ['insert l 6', 'go 5 3', 'finish']
-[x] bin/135 vs. bin/11111: round 9 PLAYER_1: ['insert l 6', 'go 5 3', 'finish']
+[*] round 9 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 9 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 9 PLAYER_2 thinking...
-[*] round 9 PLAYER_2: ['insert top 6', 'finish']
-[x] bin/135 vs. bin/11111: round 9 PLAYER_2: ['insert top 6', 'finish']
+[*] round 9 PLAYER_2: ['insert left 4', 'finish']
+[x] bin/135 vs. bin/11111: round 9 PLAYER_2: ['insert left 4', 'finish']
 [x] bin/135 vs. bin/11111: round 10 PLAYER_1 thinking...
-[*] round 10 PLAYER_1: ['insert t 6', 'go 4 6', 'finish']
-[x] bin/135 vs. bin/11111: round 10 PLAYER_1: ['insert t 6', 'go 4 6', 'finish']
+[*] round 10 PLAYER_1: ['insert t 2', 'go 6 5', 'finish']
+[x] bin/135 vs. bin/11111: round 10 PLAYER_1: ['insert t 2', 'go 6 5', 'finish']
 [x] bin/135 vs. bin/11111: round 10 PLAYER_2 thinking...
-[*] round 10 PLAYER_2: ['insert right 6', 'finish']
-[x] bin/135 vs. bin/11111: round 10 PLAYER_2: ['insert right 6', 'finish']
+[*] round 10 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/135 vs. bin/11111: round 10 PLAYER_2: ['insert top 4', 'finish']
 [x] bin/135 vs. bin/11111: round 11 PLAYER_1 thinking...
-[*] round 11 PLAYER_1: ['insert t 6', 'go 6 7', 'finish']
-[x] bin/135 vs. bin/11111: round 11 PLAYER_1: ['insert t 6', 'go 6 7', 'finish']
+[*] round 11 PLAYER_1: ['insert t 4', 'go 5 3', 'finish']
+[x] bin/135 vs. bin/11111: round 11 PLAYER_1: ['insert t 4', 'go 5 3', 'finish']
 [x] bin/135 vs. bin/11111: round 11 PLAYER_2 thinking...
-[*] round 11 PLAYER_2: ['insert right 2', 'finish']
-[x] bin/135 vs. bin/11111: round 11 PLAYER_2: ['insert right 2', 'finish']
+[*] round 11 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/135 vs. bin/11111: round 11 PLAYER_2: ['insert right 6', 'finish']
 [x] bin/135 vs. bin/11111: round 12 PLAYER_1 thinking...
-[*] round 12 PLAYER_1: ['insert b 4', 'finish']
-[x] bin/135 vs. bin/11111: round 12 PLAYER_1: ['insert b 4', 'finish']
+[*] round 12 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/11111: round 12 PLAYER_1: ['insert b 2', 'finish']
 [x] bin/135 vs. bin/11111: round 12 PLAYER_2 thinking...
-[*] round 12 PLAYER_2: ['insert left 4', 'finish']
-[x] bin/135 vs. bin/11111: round 12 PLAYER_2: ['insert left 4', 'finish']
+[*] round 12 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/135 vs. bin/11111: round 12 PLAYER_2: ['insert right 2', 'finish']
 [x] bin/135 vs. bin/11111: round 13 PLAYER_1 thinking...
-[*] round 13 PLAYER_1: ['insert t 6', 'go 5 4', 'finish']
-[x] bin/135 vs. bin/11111: round 13 PLAYER_1: ['insert t 6', 'go 5 4', 'finish']
+[*] round 13 PLAYER_1: ['insert b 6', 'go 2 4', 'finish']
+[x] bin/135 vs. bin/11111: round 13 PLAYER_1: ['insert b 6', 'go 2 4', 'finish']
 [x] bin/135 vs. bin/11111: round 13 PLAYER_2 thinking...
-[*] round 13 PLAYER_2: ['insert right 6', 'finish']
-[x] bin/135 vs. bin/11111: round 13 PLAYER_2: ['insert right 6', 'finish']
+[*] round 13 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 13 PLAYER_2: ['insert right 4', 'finish']
 [x] bin/135 vs. bin/11111: round 14 PLAYER_1 thinking...
-[*] round 14 PLAYER_1: ['insert b 4', 'go 3 7', 'finish']
-[x] bin/135 vs. bin/11111: round 14 PLAYER_1: ['insert b 4', 'go 3 7', 'finish']
+[*] round 14 PLAYER_1: ['insert t 6', 'go 7 2', 'finish']
+[x] bin/135 vs. bin/11111: round 14 PLAYER_1: ['insert t 6', 'go 7 2', 'finish']
 [x] bin/135 vs. bin/11111: round 14 PLAYER_2 thinking...
-[*] round 14 PLAYER_2: ['insert top 6', 'finish']
-[x] bin/135 vs. bin/11111: round 14 PLAYER_2: ['insert top 6', 'finish']
+[*] round 14 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 14 PLAYER_2: ['insert right 4', 'finish']
 [x] bin/135 vs. bin/11111: round 15 PLAYER_1 thinking...
-[*] round 15 PLAYER_1: ['insert r 4', 'go 3 3', 'finish']
-[x] bin/135 vs. bin/11111: round 15 PLAYER_1: ['insert r 4', 'go 3 3', 'finish']
+[*] round 15 PLAYER_1: ['insert b 4', 'go 6 1', 'finish']
+[x] bin/135 vs. bin/11111: round 15 PLAYER_1: ['insert b 4', 'go 6 1', 'finish']
 [x] bin/135 vs. bin/11111: round 15 PLAYER_2 thinking...
-[*] round 15 PLAYER_2: ['insert top 6', 'finish']
-[x] bin/135 vs. bin/11111: round 15 PLAYER_2: ['insert top 6', 'finish']
+[*] round 15 PLAYER_2: ['insert bottom 4', 'finish']
+[x] bin/135 vs. bin/11111: round 15 PLAYER_2: ['insert bottom 4', 'finish']
 [x] bin/135 vs. bin/11111: round 16 PLAYER_1 thinking...
-[*] round 16 PLAYER_1: ['insert t 2', 'go 2 4', 'finish']
-[x] bin/135 vs. bin/11111: round 16 PLAYER_1: ['insert t 2', 'go 2 4', 'finish']
+[*] round 16 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 16 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 16 PLAYER_2 thinking...
-[*] round 16 PLAYER_2: ['insert bottom 6', 'finish']
-[x] bin/135 vs. bin/11111: round 16 PLAYER_2: ['insert bottom 6', 'finish']
+[*] round 16 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/135 vs. bin/11111: round 16 PLAYER_2: ['insert top 4', 'finish']
 [x] bin/135 vs. bin/11111: round 17 PLAYER_1 thinking...
-[*] round 17 PLAYER_1: ['insert t 2', 'go 3 2', 'finish']
-[x] bin/135 vs. bin/11111: round 17 PLAYER_1: ['insert t 2', 'go 3 2', 'finish']
+[*] round 17 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 17 PLAYER_1: ['insert b 6', 'finish']
 [x] bin/135 vs. bin/11111: round 17 PLAYER_2 thinking...
-[*] round 17 PLAYER_2: ['insert left 6', 'finish']
-[x] bin/135 vs. bin/11111: round 17 PLAYER_2: ['insert left 6', 'finish']
+[*] round 17 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/135 vs. bin/11111: round 17 PLAYER_2: ['insert bottom 2', 'finish']
 [x] bin/135 vs. bin/11111: round 18 PLAYER_1 thinking...
-[*] round 18 PLAYER_1: ['insert t 2', 'go 3 6', 'finish']
-[x] bin/135 vs. bin/11111: round 18 PLAYER_1: ['insert t 2', 'go 3 6', 'finish']
+[*] round 18 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 18 PLAYER_1: ['insert b 4', 'finish']
 [x] bin/135 vs. bin/11111: round 18 PLAYER_2 thinking...
-[*] round 18 PLAYER_2: ['insert bottom 4', 'finish']
-[x] bin/135 vs. bin/11111: round 18 PLAYER_2: ['insert bottom 4', 'finish']
+[*] round 18 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/135 vs. bin/11111: round 18 PLAYER_2: ['insert right 6', 'finish']
 [x] bin/135 vs. bin/11111: round 19 PLAYER_1 thinking...
-[*] round 19 PLAYER_1: ['insert b 6', 'finish']
-[x] bin/135 vs. bin/11111: round 19 PLAYER_1: ['insert b 6', 'finish']
+[*] round 19 PLAYER_1: ['insert r 4', 'go 3 7', 'finish']
+[x] bin/135 vs. bin/11111: round 19 PLAYER_1: ['insert r 4', 'go 3 7', 'finish']
 [x] bin/135 vs. bin/11111: round 19 PLAYER_2 thinking...
-[*] round 19 PLAYER_2: ['insert left 2', 'finish']
-[x] bin/135 vs. bin/11111: round 19 PLAYER_2: ['insert left 2', 'finish']
+[*] round 19 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/135 vs. bin/11111: round 19 PLAYER_2: ['insert top 4', 'finish']
 [x] bin/135 vs. bin/11111: round 20 PLAYER_1 thinking...
-[*] round 20 PLAYER_1: ['insert l 2', 'go 1 2', 'finish']
-[x] bin/135 vs. bin/11111: round 20 PLAYER_1: ['insert l 2', 'go 1 2', 'finish']
+[*] round 20 PLAYER_1: ['insert l 4', 'go 3 3', 'finish']
+[x] bin/135 vs. bin/11111: round 20 PLAYER_1: ['insert l 4', 'go 3 3', 'finish']
 [x] bin/135 vs. bin/11111: round 20 PLAYER_2 thinking...
 [*] round 20 PLAYER_2: ['insert left 6', 'finish']
 [x] bin/135 vs. bin/11111: round 20 PLAYER_2: ['insert left 6', 'finish']
 [x] bin/135 vs. bin/11111: round 21 PLAYER_1 thinking...
-[*] round 21 PLAYER_1: ['insert b 2', 'finish']
-[x] bin/135 vs. bin/11111: round 21 PLAYER_1: ['insert b 2', 'finish']
+[*] round 21 PLAYER_1: ['insert l 4', 'go 4 3', 'finish']
+[x] bin/135 vs. bin/11111: round 21 PLAYER_1: ['insert l 4', 'go 4 3', 'finish']
 [x] bin/135 vs. bin/11111: round 21 PLAYER_2 thinking...
-[*] round 21 PLAYER_2: ['insert left 4', 'finish']
-[x] bin/135 vs. bin/11111: round 21 PLAYER_2: ['insert left 4', 'finish']
+[*] round 21 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/135 vs. bin/11111: round 21 PLAYER_2: ['insert bottom 6', 'finish']
 [x] bin/135 vs. bin/11111: round 22 PLAYER_1 thinking...
-[*] round 22 PLAYER_1: ['insert b 6', 'finish']
-[x] bin/135 vs. bin/11111: round 22 PLAYER_1: ['insert b 6', 'finish']
+[*] round 22 PLAYER_1: ['insert t 2', 'go 3 4', 'finish']
+[x] bin/135 vs. bin/11111: round 22 PLAYER_1: ['insert t 2', 'go 3 4', 'finish']
 [x] bin/135 vs. bin/11111: round 22 PLAYER_2 thinking...
-[*] round 22 PLAYER_2: ['insert left 4', 'finish']
-[x] bin/135 vs. bin/11111: round 22 PLAYER_2: ['insert left 4', 'finish']
+[*] round 22 PLAYER_2: ['insert bottom 4', 'finish']
+[x] bin/135 vs. bin/11111: round 22 PLAYER_2: ['insert bottom 4', 'finish']
 [x] bin/135 vs. bin/11111: round 23 PLAYER_1 thinking...
+[*] round 23 PLAYER_1: ['insert b 4', 'go 2 6', 'finish']
+[x] bin/135 vs. bin/11111: round 23 PLAYER_1: ['insert b 4', 'go 2 6', 'finish']
+[x] bin/135 vs. bin/11111: round 23 PLAYER_2 thinking...
+[*] round 23 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/135 vs. bin/11111: round 23 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/135 vs. bin/11111: round 24 PLAYER_1 thinking...
+[*] round 24 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 24 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 24 PLAYER_2 thinking...
+[*] round 24 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 24 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 25 PLAYER_1 thinking...
+[*] round 25 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 25 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 25 PLAYER_2 thinking...
+[*] round 25 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 25 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 26 PLAYER_1 thinking...
+[*] round 26 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 26 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 26 PLAYER_2 thinking...
+[*] round 26 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/135 vs. bin/11111: round 26 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/135 vs. bin/11111: round 27 PLAYER_1 thinking...
+[*] round 27 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 27 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 27 PLAYER_2 thinking...
+[*] round 27 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 27 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/135 vs. bin/11111: round 28 PLAYER_1 thinking...
+[*] round 28 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 28 PLAYER_1: ['insert b 4', 'finish']
+[x] bin/135 vs. bin/11111: round 28 PLAYER_2 thinking...
+[*] round 28 PLAYER_2: ['insert top 6', 'finish']
+[x] bin/135 vs. bin/11111: round 28 PLAYER_2: ['insert top 6', 'finish']
+[x] bin/135 vs. bin/11111: round 29 PLAYER_1 thinking...
+[*] round 29 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/11111: round 29 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/11111: round 29 PLAYER_2 thinking...
+[*] round 29 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 29 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/135 vs. bin/11111: round 30 PLAYER_1 thinking...
+[*] round 30 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 30 PLAYER_1: ['insert b 6', 'finish']
+[x] bin/135 vs. bin/11111: round 30 PLAYER_2 thinking...
+[*] round 30 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/135 vs. bin/11111: round 30 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/135 vs. bin/11111: round 31 PLAYER_1 thinking...
+[!] Player.PLAYER_1 did not send any commands
+('PLAYER_2', 'INVALID_OUTPUT')
+[*] finished with exception
+[*] ('PLAYER_2', 'INVALID_OUTPUT')
+[!] Player 2 won (INVALID_OUTPUT)
+[-] bin/135 vs. bin/11111: Failed
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' (pid 238)
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111' (pid 237)
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135' (pid 236)
+Gameresult: PlayResult.PLAYER_2, ResultReason.INVALID_OUTPUT
+Starting new game with seed 2642558127: 135 vs 22222
+[x] bin/135 vs. bin/22222
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135': pid 239
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222': pid 240
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 241
+[x] bin/135 vs. bin/22222: round 1 PLAYER_1 thinking...
+[*] round 1 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/22222: round 1 PLAYER_1: ['insert b 2', 'finish']
+[x] bin/135 vs. bin/22222: round 1 PLAYER_2 thinking...
+[*] round 1 PLAYER_2: ['insert right 2', 'go 5 1', 'finish']
+[x] bin/135 vs. bin/22222: round 1 PLAYER_2: ['insert right 2', 'go 5 1', 'finish']
+[x] bin/135 vs. bin/22222: round 2 PLAYER_1 thinking...
+[*] round 2 PLAYER_1: ['insert r 2', 'go 7 6', 'finish']
+[x] bin/135 vs. bin/22222: round 2 PLAYER_1: ['insert r 2', 'go 7 6', 'finish']
+[x] bin/135 vs. bin/22222: round 2 PLAYER_2 thinking...
+[*] round 2 PLAYER_2: ['insert bottom 4', 'go 5 7', 'finish']
+[x] bin/135 vs. bin/22222: round 2 PLAYER_2: ['insert bottom 4', 'go 5 7', 'finish']
+[x] bin/135 vs. bin/22222: round 3 PLAYER_1 thinking...
+[*] round 3 PLAYER_1: ['insert t 2', 'go 5 3', 'finish']
+[x] bin/135 vs. bin/22222: round 3 PLAYER_1: ['insert t 2', 'go 5 3', 'finish']
+[x] bin/135 vs. bin/22222: round 3 PLAYER_2 thinking...
+[*] round 3 PLAYER_2: ['insert left 2', 'go 3 1', 'finish']
+[x] bin/135 vs. bin/22222: round 3 PLAYER_2: ['insert left 2', 'go 3 1', 'finish']
+[x] bin/135 vs. bin/22222: round 4 PLAYER_1 thinking...
+[*] round 4 PLAYER_1: ['insert t 2', 'go 2 4', 'finish']
+[x] bin/135 vs. bin/22222: round 4 PLAYER_1: ['insert t 2', 'go 2 4', 'finish']
+[x] bin/135 vs. bin/22222: round 4 PLAYER_2 thinking...
+[*] round 4 PLAYER_2: ['insert bottom 4', 'go 2 2', 'finish']
+[x] bin/135 vs. bin/22222: round 4 PLAYER_2: ['insert bottom 4', 'go 2 2', 'finish']
+[x] bin/135 vs. bin/22222: round 5 PLAYER_1 thinking...
+[*] round 5 PLAYER_1: ['insert l 2', 'go 2 2', 'finish']
+[x] bin/135 vs. bin/22222: round 5 PLAYER_1: ['insert l 2', 'go 2 2', 'finish']
+[x] bin/135 vs. bin/22222: round 5 PLAYER_2 thinking...
+[*] round 5 PLAYER_2: ['insert bottom 2', 'go 2 4', 'finish']
+[x] bin/135 vs. bin/22222: round 5 PLAYER_2: ['insert bottom 2', 'go 2 4', 'finish']
+[x] bin/135 vs. bin/22222: round 6 PLAYER_1 thinking...
+[*] round 6 PLAYER_1: ['insert b 2', 'go 6 3', 'finish']
+[x] bin/135 vs. bin/22222: round 6 PLAYER_1: ['insert b 2', 'go 6 3', 'finish']
+[x] bin/135 vs. bin/22222: round 6 PLAYER_2 thinking...
+[*] round 6 PLAYER_2: ['insert top 4', 'go 3 5', 'finish']
+[x] bin/135 vs. bin/22222: round 6 PLAYER_2: ['insert top 4', 'go 3 5', 'finish']
+[x] bin/135 vs. bin/22222: round 7 PLAYER_1 thinking...
+[*] round 7 PLAYER_1: ['insert t 2', 'go 3 7', 'finish']
+[x] bin/135 vs. bin/22222: round 7 PLAYER_1: ['insert t 2', 'go 3 7', 'finish']
+[x] bin/135 vs. bin/22222: round 7 PLAYER_2 thinking...
+[*] round 7 PLAYER_2: ['insert bottom 6', 'go 1 3', 'finish']
+[x] bin/135 vs. bin/22222: round 7 PLAYER_2: ['insert bottom 6', 'go 1 3', 'finish']
+[x] bin/135 vs. bin/22222: round 8 PLAYER_1 thinking...
+[*] round 8 PLAYER_1: ['insert t 2', 'go 3 3', 'finish']
+[x] bin/135 vs. bin/22222: round 8 PLAYER_1: ['insert t 2', 'go 3 3', 'finish']
+[x] bin/135 vs. bin/22222: round 8 PLAYER_2 thinking...
+[*] round 8 PLAYER_2: ['insert bottom 6', 'go 4 3', 'finish']
+[x] bin/135 vs. bin/22222: round 8 PLAYER_2: ['insert bottom 6', 'go 4 3', 'finish']
+[x] bin/135 vs. bin/22222: round 9 PLAYER_1 thinking...
+[*] round 9 PLAYER_1: ['insert t 2', 'go 6 4', 'finish']
+[x] bin/135 vs. bin/22222: round 9 PLAYER_1: ['insert t 2', 'go 6 4', 'finish']
+[x] bin/135 vs. bin/22222: round 9 PLAYER_2 thinking...
+[*] round 9 PLAYER_2: ['insert bottom 6', 'go 5 5', 'finish']
+[x] bin/135 vs. bin/22222: round 9 PLAYER_2: ['insert bottom 6', 'go 5 5', 'finish']
+[x] bin/135 vs. bin/22222: round 10 PLAYER_1 thinking...
+[*] round 10 PLAYER_1: ['insert t 2', 'go 3 4', 'finish']
+[x] bin/135 vs. bin/22222: round 10 PLAYER_1: ['insert t 2', 'go 3 4', 'finish']
+[x] bin/135 vs. bin/22222: round 10 PLAYER_2 thinking...
+[*] round 10 PLAYER_2: ['insert bottom 6', 'go 1 5', 'finish']
+[x] bin/135 vs. bin/22222: round 10 PLAYER_2: ['insert bottom 6', 'go 1 5', 'finish']
+[x] bin/135 vs. bin/22222: round 11 PLAYER_1 thinking...
+[*] round 11 PLAYER_1: ['insert t 2', 'go 6 7', 'finish']
+[x] bin/135 vs. bin/22222: round 11 PLAYER_1: ['insert t 2', 'go 6 7', 'finish']
+[x] bin/135 vs. bin/22222: round 11 PLAYER_2 thinking...
+[*] round 11 PLAYER_2: ['insert bottom 6', 'go 7 3', 'finish']
+[x] bin/135 vs. bin/22222: round 11 PLAYER_2: ['insert bottom 6', 'go 7 3', 'finish']
+[x] bin/135 vs. bin/22222: round 12 PLAYER_1 thinking...
+[*] round 12 PLAYER_1: ['insert t 2', 'go 6 5', 'finish']
+[x] bin/135 vs. bin/22222: round 12 PLAYER_1: ['insert t 2', 'go 6 5', 'finish']
+[x] bin/135 vs. bin/22222: round 12 PLAYER_2 thinking...
+[*] round 12 PLAYER_2: ['insert top 2', 'go 4 2', 'finish']
+[x] bin/135 vs. bin/22222: round 12 PLAYER_2: ['insert top 2', 'go 4 2', 'finish']
+[x] bin/135 vs. bin/22222: round 13 PLAYER_1 thinking...
+[*] round 13 PLAYER_1: ['insert t 2', 'go 4 7', 'finish']
+[x] bin/135 vs. bin/22222: round 13 PLAYER_1: ['insert t 2', 'go 4 7', 'finish']
+[x] bin/135 vs. bin/22222: round 13 PLAYER_2 thinking...
+[*] round 13 PLAYER_2: ['insert bottom 6', 'go 7 5', 'finish']
+[x] bin/135 vs. bin/22222: round 13 PLAYER_2: ['insert bottom 6', 'go 7 5', 'finish']
+[x] bin/135 vs. bin/22222: round 14 PLAYER_1 thinking...
+[*] PLAYER_1 closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 4.31KB
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135' stopped with exit code 0 (pid 239)
+[+] Receiving all data: Done (4.31KB)
+[*] round 14 PLAYER_1: ['insert r 4', 'go 1 1', 'finish']
+[x] bin/135 vs. bin/22222: round 14 PLAYER_1: ['insert r 4', 'go 1 1', 'finish']
+[*] REFERENCE closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 33B
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' stopped with exit code 0 (pid 241)
+[+] Receiving all data: Done (33B)
+[*] finished normally
+[+] bin/135 vs. bin/22222: Player 1 won
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222' (pid 240)
+Gameresult: PlayResult.PLAYER_1, ResultReason.NORMAL
+Starting new game with seed 2642558127: 11111 vs 135
+[x] bin/11111 vs. bin/135
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111': pid 242
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135': pid 243
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 244
+[x] bin/11111 vs. bin/135: round 1 PLAYER_1 thinking...
+[*] round 1 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 1 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 1 PLAYER_2 thinking...
+[*] round 1 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 1 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 2 PLAYER_1 thinking...
+[*] round 2 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 2 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 2 PLAYER_2 thinking...
+[*] round 2 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 2 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 3 PLAYER_1 thinking...
+[*] round 3 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 3 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 3 PLAYER_2 thinking...
+[*] round 3 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 3 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 4 PLAYER_1 thinking...
+[*] round 4 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 4 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 4 PLAYER_2 thinking...
+[*] round 4 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 4 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 5 PLAYER_1 thinking...
+[*] round 5 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 5 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 5 PLAYER_2 thinking...
+[*] round 5 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 5 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 6 PLAYER_1 thinking...
+[*] round 6 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 6 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 6 PLAYER_2 thinking...
+[*] round 6 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 6 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 7 PLAYER_1 thinking...
+[*] round 7 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 7 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 7 PLAYER_2 thinking...
+[*] round 7 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 7 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 8 PLAYER_1 thinking...
+[*] round 8 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 8 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 8 PLAYER_2 thinking...
+[*] round 8 PLAYER_2: ['insert r 2', 'go 5 1', 'finish']
+[x] bin/11111 vs. bin/135: round 8 PLAYER_2: ['insert r 2', 'go 5 1', 'finish']
+[x] bin/11111 vs. bin/135: round 9 PLAYER_1 thinking...
+[*] round 9 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 9 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 9 PLAYER_2 thinking...
+[*] round 9 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 9 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 10 PLAYER_1 thinking...
+[*] round 10 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 10 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 10 PLAYER_2 thinking...
+[*] round 10 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 10 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 11 PLAYER_1 thinking...
+[*] round 11 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 11 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 11 PLAYER_2 thinking...
+[*] round 11 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 11 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 12 PLAYER_1 thinking...
+[*] round 12 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 12 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 12 PLAYER_2 thinking...
+[*] round 12 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 12 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 13 PLAYER_1 thinking...
+[*] round 13 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 13 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 13 PLAYER_2 thinking...
+[*] round 13 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 13 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 14 PLAYER_1 thinking...
+[*] round 14 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 14 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 14 PLAYER_2 thinking...
+[*] round 14 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 14 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 15 PLAYER_1 thinking...
+[*] round 15 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 15 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 15 PLAYER_2 thinking...
+[*] round 15 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 15 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 16 PLAYER_1 thinking...
+[*] round 16 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 16 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 16 PLAYER_2 thinking...
+[*] round 16 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 16 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 17 PLAYER_1 thinking...
+[*] round 17 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 17 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 17 PLAYER_2 thinking...
+[*] round 17 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 17 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 18 PLAYER_1 thinking...
+[*] round 18 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 18 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 18 PLAYER_2 thinking...
+[*] round 18 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 18 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 19 PLAYER_1 thinking...
+[*] round 19 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 19 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 19 PLAYER_2 thinking...
+[*] round 19 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 19 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 20 PLAYER_1 thinking...
+[*] round 20 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 20 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 20 PLAYER_2 thinking...
+[*] round 20 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 20 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 21 PLAYER_1 thinking...
+[*] round 21 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 21 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 21 PLAYER_2 thinking...
+[*] round 21 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 21 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 22 PLAYER_1 thinking...
+[*] round 22 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 22 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 22 PLAYER_2 thinking...
+[*] round 22 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 22 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 23 PLAYER_1 thinking...
+[*] round 23 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 23 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 23 PLAYER_2 thinking...
+[*] round 23 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 23 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 24 PLAYER_1 thinking...
+[*] round 24 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 24 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 24 PLAYER_2 thinking...
+[*] round 24 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 24 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 25 PLAYER_1 thinking...
+[*] round 25 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 25 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 25 PLAYER_2 thinking...
+[*] round 25 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 25 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 26 PLAYER_1 thinking...
+[*] round 26 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 26 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 26 PLAYER_2 thinking...
+[*] round 26 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 26 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 27 PLAYER_1 thinking...
+[*] round 27 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 27 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 27 PLAYER_2 thinking...
+[*] round 27 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 27 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 28 PLAYER_1 thinking...
+[*] round 28 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 28 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 28 PLAYER_2 thinking...
+[*] round 28 PLAYER_2: ['insert l 6', 'go 5 7', 'finish']
+[x] bin/11111 vs. bin/135: round 28 PLAYER_2: ['insert l 6', 'go 5 7', 'finish']
+[x] bin/11111 vs. bin/135: round 29 PLAYER_1 thinking...
+[*] round 29 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 29 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 29 PLAYER_2 thinking...
+[*] round 29 PLAYER_2: ['insert l 4', 'go 3 1', 'finish']
+[x] bin/11111 vs. bin/135: round 29 PLAYER_2: ['insert l 4', 'go 3 1', 'finish']
+[x] bin/11111 vs. bin/135: round 30 PLAYER_1 thinking...
+[*] round 30 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 30 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 30 PLAYER_2 thinking...
+[*] round 30 PLAYER_2: ['insert b 6', 'go 3 5', 'finish']
+[x] bin/11111 vs. bin/135: round 30 PLAYER_2: ['insert b 6', 'go 3 5', 'finish']
+[x] bin/11111 vs. bin/135: round 31 PLAYER_1 thinking...
+[*] round 31 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 31 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 31 PLAYER_2 thinking...
+[*] round 31 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 31 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 32 PLAYER_1 thinking...
+[*] round 32 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 32 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 32 PLAYER_2 thinking...
+[*] round 32 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 32 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 33 PLAYER_1 thinking...
+[*] round 33 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 33 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/135: round 33 PLAYER_2 thinking...
+[*] round 33 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 33 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 34 PLAYER_1 thinking...
+[*] round 34 PLAYER_1: ['insert left 2', 'finish']
+[x] bin/11111 vs. bin/135: round 34 PLAYER_1: ['insert left 2', 'finish']
+[x] bin/11111 vs. bin/135: round 34 PLAYER_2 thinking...
+[*] round 34 PLAYER_2: ['insert l 2', 'go 1 3', 'finish']
+[x] bin/11111 vs. bin/135: round 34 PLAYER_2: ['insert l 2', 'go 1 3', 'finish']
+[x] bin/11111 vs. bin/135: round 35 PLAYER_1 thinking...
+[*] round 35 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 35 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 35 PLAYER_2 thinking...
+[*] round 35 PLAYER_2: ['insert t 2', 'go 2 3', 'finish']
+[x] bin/11111 vs. bin/135: round 35 PLAYER_2: ['insert t 2', 'go 2 3', 'finish']
+[x] bin/11111 vs. bin/135: round 36 PLAYER_1 thinking...
+[*] round 36 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 36 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 36 PLAYER_2 thinking...
+[*] round 36 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 36 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 37 PLAYER_1 thinking...
+[*] round 37 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 37 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 37 PLAYER_2 thinking...
+[*] round 37 PLAYER_2: ['insert r 4', 'go 5 5', 'finish']
+[x] bin/11111 vs. bin/135: round 37 PLAYER_2: ['insert r 4', 'go 5 5', 'finish']
+[x] bin/11111 vs. bin/135: round 38 PLAYER_1 thinking...
+[*] round 38 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 38 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 38 PLAYER_2 thinking...
+[*] round 38 PLAYER_2: ['insert t 2', 'go 1 5', 'finish']
+[x] bin/11111 vs. bin/135: round 38 PLAYER_2: ['insert t 2', 'go 1 5', 'finish']
+[x] bin/11111 vs. bin/135: round 39 PLAYER_1 thinking...
+[*] round 39 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 39 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 39 PLAYER_2 thinking...
+[*] round 39 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 39 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 40 PLAYER_1 thinking...
+[*] round 40 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 40 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 40 PLAYER_2 thinking...
+[*] round 40 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 40 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 41 PLAYER_1 thinking...
+[*] round 41 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 41 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 41 PLAYER_2 thinking...
+[*] round 41 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 41 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 42 PLAYER_1 thinking...
+[*] round 42 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 42 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 42 PLAYER_2 thinking...
+[*] round 42 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 42 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 43 PLAYER_1 thinking...
+[*] round 43 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 43 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 43 PLAYER_2 thinking...
+[*] round 43 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 43 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 44 PLAYER_1 thinking...
+[*] round 44 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 44 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 44 PLAYER_2 thinking...
+[*] round 44 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 44 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 45 PLAYER_1 thinking...
+[*] round 45 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 45 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 45 PLAYER_2 thinking...
+[*] round 45 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 45 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 46 PLAYER_1 thinking...
+[*] round 46 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 46 PLAYER_1: ['insert right 6', 'finish']
+[x] bin/11111 vs. bin/135: round 46 PLAYER_2 thinking...
+[*] round 46 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 46 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 47 PLAYER_1 thinking...
+[*] round 47 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 47 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 47 PLAYER_2 thinking...
+[*] round 47 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 47 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 48 PLAYER_1 thinking...
+[*] round 48 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 48 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/135: round 48 PLAYER_2 thinking...
+[*] round 48 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 48 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 49 PLAYER_1 thinking...
+[*] round 49 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 49 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 49 PLAYER_2 thinking...
+[*] round 49 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 49 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 50 PLAYER_1 thinking...
+[*] round 50 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 50 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/135: round 50 PLAYER_2 thinking...
+[*] round 50 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 50 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 51 PLAYER_1 thinking...
+[*] round 51 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 51 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 51 PLAYER_2 thinking...
+[*] round 51 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 51 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 52 PLAYER_1 thinking...
+[*] round 52 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 52 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/135: round 52 PLAYER_2 thinking...
+[*] round 52 PLAYER_2: ['insert t 2', 'go 7 3', 'finish']
+[x] bin/11111 vs. bin/135: round 52 PLAYER_2: ['insert t 2', 'go 7 3', 'finish']
+[x] bin/11111 vs. bin/135: round 53 PLAYER_1 thinking...
+[*] round 53 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 53 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 53 PLAYER_2 thinking...
+[*] round 53 PLAYER_2: ['insert t 4', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/135: round 53 PLAYER_2: ['insert t 4', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/135: round 54 PLAYER_1 thinking...
+[*] round 54 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 54 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/135: round 54 PLAYER_2 thinking...
+[*] round 54 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 54 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 55 PLAYER_1 thinking...
+[*] round 55 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/135: round 55 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/135: round 55 PLAYER_2 thinking...
+[*] round 55 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 55 PLAYER_2: ['insert b 2', 'finish']
+[x] bin/11111 vs. bin/135: round 56 PLAYER_1 thinking...
+[*] round 56 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 56 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 56 PLAYER_2 thinking...
+[*] round 56 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 56 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 57 PLAYER_1 thinking...
+[*] round 57 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 57 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/135: round 57 PLAYER_2 thinking...
+[*] round 57 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 57 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 58 PLAYER_1 thinking...
+[*] round 58 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 58 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 58 PLAYER_2 thinking...
+[*] round 58 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 58 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 59 PLAYER_1 thinking...
+[*] round 59 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 59 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 59 PLAYER_2 thinking...
+[*] round 59 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 59 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/11111 vs. bin/135: round 60 PLAYER_1 thinking...
+[*] round 60 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 60 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 60 PLAYER_2 thinking...
+[*] round 60 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 60 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/11111 vs. bin/135: round 61 PLAYER_1 thinking...
+[*] round 61 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 61 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/135: round 61 PLAYER_2 thinking...
+[*] round 61 PLAYER_2: ['insert r 2', 'go 7 5', 'finish']
+[x] bin/11111 vs. bin/135: round 61 PLAYER_2: ['insert r 2', 'go 7 5', 'finish']
+[x] bin/11111 vs. bin/135: round 62 PLAYER_1 thinking...
+[*] round 62 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 62 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/135: round 62 PLAYER_2 thinking...
+[*] round 62 PLAYER_2: ['insert t 2', 'go 2 6', 'finish']
+[x] bin/11111 vs. bin/135: round 62 PLAYER_2: ['insert t 2', 'go 2 6', 'finish']
+[x] bin/11111 vs. bin/135: round 63 PLAYER_1 thinking...
+[*] round 63 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 63 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/135: round 63 PLAYER_2 thinking...
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135' stopped with exit code 0 (pid 243)
+[*] PLAYER_2 closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 4.31KB
+[+] Receiving all data: Done (4.31KB)
+[*] round 63 PLAYER_2: ['insert t 2', 'go 1 7', 'finish']
+[x] bin/11111 vs. bin/135: round 63 PLAYER_2: ['insert t 2', 'go 1 7', 'finish']
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' stopped with exit code 0 (pid 244)
+[*] REFERENCE closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 36B
+[+] Receiving all data: Done (36B)
+[*] finished normally
+[+] bin/11111 vs. bin/135: Player 2 won
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111' (pid 242)
+Gameresult: PlayResult.PLAYER_2, ResultReason.NORMAL
+Starting new game with seed 2642558127: 11111 vs 22222
+[x] bin/11111 vs. bin/22222
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111': pid 245
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222': pid 246
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 247
+[x] bin/11111 vs. bin/22222: round 1 PLAYER_1 thinking...
+[*] round 1 PLAYER_1: ['insert left 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 1 PLAYER_1: ['insert left 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 1 PLAYER_2 thinking...
+[*] round 1 PLAYER_2: ['insert left 2', 'go 5 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 1 PLAYER_2: ['insert left 2', 'go 5 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 2 PLAYER_1 thinking...
+[*] round 2 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 2 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 2 PLAYER_2 thinking...
+[*] round 2 PLAYER_2: ['insert bottom 4', 'go 5 7', 'finish']
+[x] bin/11111 vs. bin/22222: round 2 PLAYER_2: ['insert bottom 4', 'go 5 7', 'finish']
+[x] bin/11111 vs. bin/22222: round 3 PLAYER_1 thinking...
+[*] round 3 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 3 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 3 PLAYER_2 thinking...
+[*] round 3 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 3 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 4 PLAYER_1 thinking...
+[*] round 4 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 4 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 4 PLAYER_2 thinking...
+[*] round 4 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 4 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 5 PLAYER_1 thinking...
+[*] round 5 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 5 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 5 PLAYER_2 thinking...
+[*] round 5 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 5 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 6 PLAYER_1 thinking...
+[*] round 6 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 6 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 6 PLAYER_2 thinking...
+[*] round 6 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 6 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 7 PLAYER_1 thinking...
+[*] round 7 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 7 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 7 PLAYER_2 thinking...
+[*] round 7 PLAYER_2: ['insert bottom 6', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 7 PLAYER_2: ['insert bottom 6', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 8 PLAYER_1 thinking...
+[*] round 8 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 8 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 8 PLAYER_2 thinking...
+[*] round 8 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 8 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 9 PLAYER_1 thinking...
+[*] round 9 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 9 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 9 PLAYER_2 thinking...
+[*] round 9 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 9 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 10 PLAYER_1 thinking...
+[*] round 10 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 10 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 10 PLAYER_2 thinking...
+[*] round 10 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 10 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 11 PLAYER_1 thinking...
+[*] round 11 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 11 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 11 PLAYER_2 thinking...
+[*] round 11 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 11 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 12 PLAYER_1 thinking...
+[*] round 12 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 12 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 12 PLAYER_2 thinking...
+[*] round 12 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 12 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 13 PLAYER_1 thinking...
+[*] round 13 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 13 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 13 PLAYER_2 thinking...
+[*] round 13 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 13 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 14 PLAYER_1 thinking...
+[*] round 14 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 14 PLAYER_1: ['insert left 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 14 PLAYER_2 thinking...
+[*] round 14 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 14 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 15 PLAYER_1 thinking...
+[*] round 15 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 15 PLAYER_1: ['insert top 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 15 PLAYER_2 thinking...
+[*] round 15 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 15 PLAYER_2: ['insert bottom 2', 'go 2 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 16 PLAYER_1 thinking...
+[*] round 16 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 16 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 16 PLAYER_2 thinking...
+[*] round 16 PLAYER_2: ['insert left 2', 'go 3 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 16 PLAYER_2: ['insert left 2', 'go 3 1', 'finish']
+[x] bin/11111 vs. bin/22222: round 17 PLAYER_1 thinking...
+[*] round 17 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 17 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 17 PLAYER_2 thinking...
+[*] round 17 PLAYER_2: ['insert bottom 4', 'go 2 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 17 PLAYER_2: ['insert bottom 4', 'go 2 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 18 PLAYER_1 thinking...
+[*] round 18 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 18 PLAYER_1: ['insert top 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 18 PLAYER_2 thinking...
+[*] round 18 PLAYER_2: ['insert top 4', 'go 3 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 18 PLAYER_2: ['insert top 4', 'go 3 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 19 PLAYER_1 thinking...
+[*] round 19 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 19 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 19 PLAYER_2 thinking...
+[*] round 19 PLAYER_2: ['insert left 4', 'go 1 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 19 PLAYER_2: ['insert left 4', 'go 1 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 20 PLAYER_1 thinking...
+[*] round 20 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 20 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 20 PLAYER_2 thinking...
+[*] round 20 PLAYER_2: ['insert bottom 2', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 20 PLAYER_2: ['insert bottom 2', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 21 PLAYER_1 thinking...
+[*] round 21 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 21 PLAYER_1: ['insert bottom 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 21 PLAYER_2 thinking...
+[*] round 21 PLAYER_2: ['insert bottom 2', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 21 PLAYER_2: ['insert bottom 2', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 22 PLAYER_1 thinking...
+[*] round 22 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 22 PLAYER_1: ['insert right 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 22 PLAYER_2 thinking...
+[*] round 22 PLAYER_2: ['insert bottom 2', 'go 3 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 22 PLAYER_2: ['insert bottom 2', 'go 3 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 23 PLAYER_1 thinking...
+[*] round 23 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 23 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 23 PLAYER_2 thinking...
+[*] round 23 PLAYER_2: ['insert bottom 4', 'go 3 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 23 PLAYER_2: ['insert bottom 4', 'go 3 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 24 PLAYER_1 thinking...
+[*] round 24 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 24 PLAYER_1: ['insert bottom 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 24 PLAYER_2 thinking...
+[*] round 24 PLAYER_2: ['insert left 4', 'go 4 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 24 PLAYER_2: ['insert left 4', 'go 4 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 25 PLAYER_1 thinking...
+[*] round 25 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 25 PLAYER_1: ['insert bottom 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 25 PLAYER_2 thinking...
+[*] round 25 PLAYER_2: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 25 PLAYER_2: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 26 PLAYER_1 thinking...
+[*] round 26 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 26 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 26 PLAYER_2 thinking...
+[*] round 26 PLAYER_2: ['insert left 4', 'go 1 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 26 PLAYER_2: ['insert left 4', 'go 1 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 27 PLAYER_1 thinking...
+[*] round 27 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 27 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 27 PLAYER_2 thinking...
+[*] round 27 PLAYER_2: ['insert right 2', 'go 6 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 27 PLAYER_2: ['insert right 2', 'go 6 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 28 PLAYER_1 thinking...
+[*] round 28 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 28 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 28 PLAYER_2 thinking...
+[*] round 28 PLAYER_2: ['insert bottom 4', 'go 7 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 28 PLAYER_2: ['insert bottom 4', 'go 7 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 29 PLAYER_1 thinking...
+[*] round 29 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 29 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 29 PLAYER_2 thinking...
+[*] round 29 PLAYER_2: ['insert top 6', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 29 PLAYER_2: ['insert top 6', 'go 4 3', 'finish']
+[x] bin/11111 vs. bin/22222: round 30 PLAYER_1 thinking...
+[*] round 30 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 30 PLAYER_1: ['insert top 6', 'finish']
+[x] bin/11111 vs. bin/22222: round 30 PLAYER_2 thinking...
+[*] round 30 PLAYER_2: ['insert bottom 2', 'go 7 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 30 PLAYER_2: ['insert bottom 2', 'go 7 5', 'finish']
+[x] bin/11111 vs. bin/22222: round 31 PLAYER_1 thinking...
+[*] round 31 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 31 PLAYER_1: ['insert left 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 31 PLAYER_2 thinking...
+[*] round 31 PLAYER_2: ['insert bottom 2', 'go 3 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 31 PLAYER_2: ['insert bottom 2', 'go 3 4', 'finish']
+[x] bin/11111 vs. bin/22222: round 32 PLAYER_1 thinking...
+[*] round 32 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 32 PLAYER_1: ['insert right 2', 'finish']
+[x] bin/11111 vs. bin/22222: round 32 PLAYER_2 thinking...
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222' stopped with exit code 0 (pid 246)
+[*] PLAYER_2 closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 114B
+[+] Receiving all data: Done (114B)
+[*] round 32 PLAYER_2: ['insert bottom 2', 'go 1 7', 'finish']
+[x] bin/11111 vs. bin/22222: round 32 PLAYER_2: ['insert bottom 2', 'go 1 7', 'finish']
+[*] REFERENCE closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 36B
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' stopped with exit code 0 (pid 247)
+[+] Receiving all data: Done (36B)
+[*] finished normally
+[+] bin/11111 vs. bin/22222: Player 2 won
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111' (pid 245)
+Gameresult: PlayResult.PLAYER_2, ResultReason.NORMAL
+Starting new game with seed 2642558127: 22222 vs 135
+[x] bin/22222 vs. bin/135
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222': pid 248
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135': pid 249
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 250
+[x] bin/22222 vs. bin/135: round 1 PLAYER_1 thinking...
+[*] round 1 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 1 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 1 PLAYER_2 thinking...
+[*] round 1 PLAYER_2: ['insert r 2', 'go 5 1', 'finish']
+[x] bin/22222 vs. bin/135: round 1 PLAYER_2: ['insert r 2', 'go 5 1', 'finish']
+[x] bin/22222 vs. bin/135: round 2 PLAYER_1 thinking...
+[*] round 2 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 2 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 2 PLAYER_2 thinking...
+[*] round 2 PLAYER_2: ['insert b 2', 'go 5 7', 'finish']
+[x] bin/22222 vs. bin/135: round 2 PLAYER_2: ['insert b 2', 'go 5 7', 'finish']
+[x] bin/22222 vs. bin/135: round 3 PLAYER_1 thinking...
+[*] round 3 PLAYER_1: ['insert right 2', 'go 7 6', 'finish']
+[x] bin/22222 vs. bin/135: round 3 PLAYER_1: ['insert right 2', 'go 7 6', 'finish']
+[x] bin/22222 vs. bin/135: round 3 PLAYER_2 thinking...
+[*] round 3 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 3 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 4 PLAYER_1 thinking...
+[*] round 4 PLAYER_1: ['insert bottom 2', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/135: round 4 PLAYER_1: ['insert bottom 2', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/135: round 4 PLAYER_2 thinking...
+[*] round 4 PLAYER_2: ['insert b 2', 'go 3 1', 'finish']
+[x] bin/22222 vs. bin/135: round 4 PLAYER_2: ['insert b 2', 'go 3 1', 'finish']
+[x] bin/22222 vs. bin/135: round 5 PLAYER_1 thinking...
+[*] round 5 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 5 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/135: round 5 PLAYER_2 thinking...
+[*] round 5 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 5 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 6 PLAYER_1 thinking...
+[*] round 6 PLAYER_1: ['insert bottom 2', 'go 1 2', 'finish']
+[x] bin/22222 vs. bin/135: round 6 PLAYER_1: ['insert bottom 2', 'go 1 2', 'finish']
+[x] bin/22222 vs. bin/135: round 6 PLAYER_2 thinking...
+[*] round 6 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 6 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 7 PLAYER_1 thinking...
+[*] round 7 PLAYER_1: ['insert bottom 2', 'go 6 3', 'finish']
+[x] bin/22222 vs. bin/135: round 7 PLAYER_1: ['insert bottom 2', 'go 6 3', 'finish']
+[x] bin/22222 vs. bin/135: round 7 PLAYER_2 thinking...
+[*] round 7 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 7 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 8 PLAYER_1 thinking...
+[*] round 8 PLAYER_1: ['insert bottom 2', 'go 3 7', 'finish']
+[x] bin/22222 vs. bin/135: round 8 PLAYER_1: ['insert bottom 2', 'go 3 7', 'finish']
+[x] bin/22222 vs. bin/135: round 8 PLAYER_2 thinking...
+[*] round 8 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 8 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 9 PLAYER_1 thinking...
+[*] round 9 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/135: round 9 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/135: round 9 PLAYER_2 thinking...
+[*] round 9 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 9 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 10 PLAYER_1 thinking...
+[*] round 10 PLAYER_1: ['insert bottom 2', 'go 1 3', 'finish']
+[x] bin/22222 vs. bin/135: round 10 PLAYER_1: ['insert bottom 2', 'go 1 3', 'finish']
+[x] bin/22222 vs. bin/135: round 10 PLAYER_2 thinking...
+[*] round 10 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 10 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 11 PLAYER_1 thinking...
+[*] round 11 PLAYER_1: ['insert bottom 4', 'go 7 4', 'finish']
+[x] bin/22222 vs. bin/135: round 11 PLAYER_1: ['insert bottom 4', 'go 7 4', 'finish']
+[x] bin/22222 vs. bin/135: round 11 PLAYER_2 thinking...
+[*] round 11 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/22222 vs. bin/135: round 11 PLAYER_2: ['insert b 6', 'finish']
+[x] bin/22222 vs. bin/135: round 12 PLAYER_1 thinking...
+[*] round 12 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/135: round 12 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/135: round 12 PLAYER_2 thinking...
+[*] round 12 PLAYER_2: ['insert r 4', 'go 3 5', 'finish']
+[x] bin/22222 vs. bin/135: round 12 PLAYER_2: ['insert r 4', 'go 3 5', 'finish']
+[x] bin/22222 vs. bin/135: round 13 PLAYER_1 thinking...
+[*] round 13 PLAYER_1: ['insert bottom 2', 'go 6 7', 'finish']
+[x] bin/22222 vs. bin/135: round 13 PLAYER_1: ['insert bottom 2', 'go 6 7', 'finish']
+[x] bin/22222 vs. bin/135: round 13 PLAYER_2 thinking...
+[*] round 13 PLAYER_2: ['insert b 6', 'go 1 3', 'finish']
+[x] bin/22222 vs. bin/135: round 13 PLAYER_2: ['insert b 6', 'go 1 3', 'finish']
+[x] bin/22222 vs. bin/135: round 14 PLAYER_1 thinking...
+[*] round 14 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 14 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 14 PLAYER_2 thinking...
+[*] round 14 PLAYER_2: ['insert t 4', 'go 2 2', 'finish']
+[x] bin/22222 vs. bin/135: round 14 PLAYER_2: ['insert t 4', 'go 2 2', 'finish']
+[x] bin/22222 vs. bin/135: round 15 PLAYER_1 thinking...
+[*] round 15 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 15 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 15 PLAYER_2 thinking...
+[*] round 15 PLAYER_2: ['insert b 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/135: round 15 PLAYER_2: ['insert b 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/135: round 16 PLAYER_1 thinking...
+[*] round 16 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 16 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 16 PLAYER_2 thinking...
+[*] round 16 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 16 PLAYER_2: ['insert b 4', 'finish']
+[x] bin/22222 vs. bin/135: round 17 PLAYER_1 thinking...
+[*] round 17 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 17 PLAYER_1: ['insert bottom 2', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/135: round 17 PLAYER_2 thinking...
+[*] round 17 PLAYER_2: ['insert l 4', 'go 1 5', 'finish']
+[x] bin/22222 vs. bin/135: round 17 PLAYER_2: ['insert l 4', 'go 1 5', 'finish']
+[x] bin/22222 vs. bin/135: round 18 PLAYER_1 thinking...
+[*] round 18 PLAYER_1: ['insert bottom 6', 'go 6 5', 'finish']
+[x] bin/22222 vs. bin/135: round 18 PLAYER_1: ['insert bottom 6', 'go 6 5', 'finish']
+[x] bin/22222 vs. bin/135: round 18 PLAYER_2 thinking...
+[*] round 18 PLAYER_2: ['insert l 6', 'go 7 3', 'finish']
+[x] bin/22222 vs. bin/135: round 18 PLAYER_2: ['insert l 6', 'go 7 3', 'finish']
+[x] bin/22222 vs. bin/135: round 19 PLAYER_1 thinking...
+[*] round 19 PLAYER_1: ['insert top 6', 'go 3 6', 'finish']
+[x] bin/22222 vs. bin/135: round 19 PLAYER_1: ['insert top 6', 'go 3 6', 'finish']
+[x] bin/22222 vs. bin/135: round 19 PLAYER_2 thinking...
+[*] round 19 PLAYER_2: ['insert t 2', 'go 6 1', 'finish']
+[x] bin/22222 vs. bin/135: round 19 PLAYER_2: ['insert t 2', 'go 6 1', 'finish']
+[x] bin/22222 vs. bin/135: round 20 PLAYER_1 thinking...
+[*] PLAYER_1 closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 111B
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222' stopped with exit code 0 (pid 248)
+[+] Receiving all data: Done (111B)
+[*] round 20 PLAYER_1: ['insert bottom 6', 'go 1 1', 'finish']
+[x] bin/22222 vs. bin/135: round 20 PLAYER_1: ['insert bottom 6', 'go 1 1', 'finish']
+[*] REFERENCE closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 33B
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' stopped with exit code 0 (pid 250)
+[+] Receiving all data: Done (33B)
+[*] finished normally
+[+] bin/22222 vs. bin/135: Player 1 won
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/135' (pid 249)
+Gameresult: PlayResult.PLAYER_1, ResultReason.NORMAL
+Starting new game with seed 2642558127: 22222 vs 11111
+[x] bin/22222 vs. bin/11111
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222': pid 251
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111': pid 252
+[x] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref'
+[+] Starting local process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref': pid 253
+[x] bin/22222 vs. bin/11111: round 1 PLAYER_1 thinking...
+[*] round 1 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 1 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 1 PLAYER_2 thinking...
+[*] round 1 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 1 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 2 PLAYER_1 thinking...
+[*] round 2 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 2 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 2 PLAYER_2 thinking...
+[*] round 2 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 2 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 3 PLAYER_1 thinking...
+[*] round 3 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 3 PLAYER_1: ['insert bottom 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 3 PLAYER_2 thinking...
+[*] round 3 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 3 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 4 PLAYER_1 thinking...
+[*] round 4 PLAYER_1: ['insert right 2', 'go 4 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 4 PLAYER_1: ['insert right 2', 'go 4 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 4 PLAYER_2 thinking...
+[*] round 4 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 4 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 5 PLAYER_1 thinking...
+[*] round 5 PLAYER_1: ['insert top 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 5 PLAYER_1: ['insert top 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 5 PLAYER_2 thinking...
+[*] round 5 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 5 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 6 PLAYER_1 thinking...
+[*] round 6 PLAYER_1: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 6 PLAYER_1: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 6 PLAYER_2 thinking...
+[*] round 6 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 6 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 7 PLAYER_1 thinking...
+[*] round 7 PLAYER_1: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 7 PLAYER_1: ['insert bottom 2', 'go 5 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 7 PLAYER_2 thinking...
+[*] round 7 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 7 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 8 PLAYER_1 thinking...
+[*] round 8 PLAYER_1: ['insert left 6', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 8 PLAYER_1: ['insert left 6', 'go 5 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 8 PLAYER_2 thinking...
+[*] round 8 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 8 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 9 PLAYER_1 thinking...
+[*] round 9 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 9 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 9 PLAYER_2 thinking...
+[*] round 9 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 9 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 10 PLAYER_1 thinking...
+[*] round 10 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 10 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 10 PLAYER_2 thinking...
+[*] round 10 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 10 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 11 PLAYER_1 thinking...
+[*] round 11 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 11 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 11 PLAYER_2 thinking...
+[*] round 11 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 11 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 12 PLAYER_1 thinking...
+[*] round 12 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 12 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 12 PLAYER_2 thinking...
+[*] round 12 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 12 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 13 PLAYER_1 thinking...
+[*] round 13 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 13 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 13 PLAYER_2 thinking...
+[*] round 13 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 13 PLAYER_2: ['insert right 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 14 PLAYER_1 thinking...
+[*] round 14 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 14 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 14 PLAYER_2 thinking...
+[*] round 14 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 14 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 15 PLAYER_1 thinking...
+[*] round 15 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 15 PLAYER_1: ['insert bottom 2', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 15 PLAYER_2 thinking...
+[*] round 15 PLAYER_2: ['insert bottom 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 15 PLAYER_2: ['insert bottom 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 16 PLAYER_1 thinking...
+[*] round 16 PLAYER_1: ['insert left 4', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 16 PLAYER_1: ['insert left 4', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 16 PLAYER_2 thinking...
+[*] round 16 PLAYER_2: ['insert top 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 16 PLAYER_2: ['insert top 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 17 PLAYER_1 thinking...
+[*] round 17 PLAYER_1: ['insert bottom 2', 'go 3 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 17 PLAYER_1: ['insert bottom 2', 'go 3 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 17 PLAYER_2 thinking...
+[*] round 17 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 17 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 18 PLAYER_1 thinking...
+[*] round 18 PLAYER_1: ['insert top 2', 'go 3 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 18 PLAYER_1: ['insert top 2', 'go 3 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 18 PLAYER_2 thinking...
+[*] round 18 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 18 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 19 PLAYER_1 thinking...
+[*] round 19 PLAYER_1: ['insert right 6', 'go 6 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 19 PLAYER_1: ['insert right 6', 'go 6 5', 'finish']
+[x] bin/22222 vs. bin/11111: round 19 PLAYER_2 thinking...
+[*] round 19 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 19 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 20 PLAYER_1 thinking...
+[*] round 20 PLAYER_1: ['insert bottom 2', 'go 3 7', 'finish']
+[x] bin/22222 vs. bin/11111: round 20 PLAYER_1: ['insert bottom 2', 'go 3 7', 'finish']
+[x] bin/22222 vs. bin/11111: round 20 PLAYER_2 thinking...
+[*] round 20 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 20 PLAYER_2: ['insert bottom 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 21 PLAYER_1 thinking...
+[*] round 21 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 21 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 21 PLAYER_2 thinking...
+[*] round 21 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 21 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 22 PLAYER_1 thinking...
+[*] round 22 PLAYER_1: ['insert top 2', 'go 4 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 22 PLAYER_1: ['insert top 2', 'go 4 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 22 PLAYER_2 thinking...
+[*] round 22 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 22 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 23 PLAYER_1 thinking...
+[*] round 23 PLAYER_1: ['insert right 2', 'go 1 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 23 PLAYER_1: ['insert right 2', 'go 1 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 23 PLAYER_2 thinking...
+[*] round 23 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 23 PLAYER_2: ['insert right 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 24 PLAYER_1 thinking...
+[*] round 24 PLAYER_1: ['insert bottom 2', 'go 1 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 24 PLAYER_1: ['insert bottom 2', 'go 1 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 24 PLAYER_2 thinking...
+[*] round 24 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 24 PLAYER_2: ['insert right 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 25 PLAYER_1 thinking...
+[*] round 25 PLAYER_1: ['insert left 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 25 PLAYER_1: ['insert left 2', 'go 2 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 25 PLAYER_2 thinking...
+[*] round 25 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 25 PLAYER_2: ['insert top 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 26 PLAYER_1 thinking...
+[*] round 26 PLAYER_1: ['insert bottom 2', 'go 2 7', 'finish']
+[x] bin/22222 vs. bin/11111: round 26 PLAYER_1: ['insert bottom 2', 'go 2 7', 'finish']
+[x] bin/22222 vs. bin/11111: round 26 PLAYER_2 thinking...
+[*] round 26 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 26 PLAYER_2: ['insert left 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 27 PLAYER_1 thinking...
+[*] round 27 PLAYER_1: ['insert bottom 4', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 27 PLAYER_1: ['insert bottom 4', 'go 5 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 27 PLAYER_2 thinking...
+[*] round 27 PLAYER_2: ['insert top 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 27 PLAYER_2: ['insert top 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 28 PLAYER_1 thinking...
+[*] round 28 PLAYER_1: ['insert bottom 4', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 28 PLAYER_1: ['insert bottom 4', 'go 5 4', 'finish']
+[x] bin/22222 vs. bin/11111: round 28 PLAYER_2 thinking...
+[*] round 28 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 28 PLAYER_2: ['insert left 2', 'finish']
+[x] bin/22222 vs. bin/11111: round 29 PLAYER_1 thinking...
+[*] round 29 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 29 PLAYER_1: ['insert bottom 2', 'go 3 3', 'finish']
+[x] bin/22222 vs. bin/11111: round 29 PLAYER_2 thinking...
+[*] round 29 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 29 PLAYER_2: ['insert bottom 6', 'finish']
+[x] bin/22222 vs. bin/11111: round 30 PLAYER_1 thinking...
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/22222' stopped with exit code 0 (pid 251)
+[*] PLAYER_1 closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 109B
+[+] Receiving all data: Done (109B)
+[*] round 30 PLAYER_1: ['insert left 2', 'go 1 1', 'finish']
+[x] bin/22222 vs. bin/11111: round 30 PLAYER_1: ['insert left 2', 'go 1 1', 'finish']
+[*] Process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/ref' stopped with exit code 0 (pid 253)
+[*] REFERENCE closed their outputstream
+[x] Receiving all data
+[x] Receiving all data: 33B
+[+] Receiving all data: Done (33B)
+[*] finished normally
+[+] bin/22222 vs. bin/11111: Player 1 won
+[*] Stopped process '/builds/oop1-ss21/a3_students/oop1ss21_a3_135/bin/11111' (pid 252)
+Gameresult: PlayResult.PLAYER_1, ResultReason.NORMAL

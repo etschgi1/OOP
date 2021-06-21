@@ -20,25 +20,27 @@ def getformated(lines):
     return out
 
 
-lines = readfile("/mnt/s/VM/OOP-VM/OOP/oopA3/python/log.txt")
-formated = (getformated(lines))
+if __name__ == "__main__":
+    # lines = readfile("/mnt/s/VM/OOP-VM/OOP/oopA3/python/log.txt")
+    lines = readfile("log.txt")
+    formatted = (getformated(lines))
 
-f = 0
-file = open("input", "w")
+    f = 0
+    file = open("input", "w")
 
-while (f < len(formated)):
-    if formated[f] == "insert":
-        file.write(formated[f] + " " + formated[f + 1] + " " + formated[f + 2] + "\n")
-        f += 3
-    if formated[f] == "go":
-        file.write(formated[f] + " " + formated[f + 1] + " " + formated[f + 2] + "\n")
-        f += 3
-    if formated[f] == "finish":
-        file.write(formated[f] + "\n")
-        f += 1
-    else:
-        f += 1
-    # else:
-    #     print(formated[f])
-    #     f+=1
-file.close()
+    while f < len(formatted):
+        if formatted[f] == "insert":
+            file.write(formatted[f] + " " + formatted[f + 1] + " " + formatted[f + 2] + "\n")
+            f += 3
+        if formatted[f] == "go":
+            file.write(formatted[f] + " " + formatted[f + 1] + " " + formatted[f + 2] + "\n")
+            f += 3
+        if formatted[f] == "finish":
+            file.write(formatted[f] + "\n")
+            f += 1
+        else:
+            f += 1
+        # else:
+        #     print(formated[f])
+        #     f+=1
+    file.close()
