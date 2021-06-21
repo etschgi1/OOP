@@ -1,6 +1,8 @@
 #include "AI.hpp"
 
-AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{current_player}
+#include <utility>
+
+AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{std::move(current_player)}
 {
   starttime_ = std::chrono::steady_clock::now();
   fall_back_pos = (game_.getFordbiddenPosition() + 2 > 7) ? 2 : game.getFordbiddenPosition() + 2;
@@ -8,16 +10,16 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{cur
   out.push_back(fall_back_side);
   out += " " + to_string(fall_back_pos);
   commands.push_back(out);
-  commands.push_back("go 0 0");
-  commands.push_back("finish");
+  commands.emplace_back("go 0 0");
+  commands.emplace_back("finish");
   success_flag = false;
   // see if player has treasure and is not done otherwise set goal to start field
   if (!player_->getStack().empty())
   {
     auto player_treasure = player_->getStack().top();
-    for (auto row : game_.getgameboard())
+    for (const auto& row : game_.getgameboard())
     {
-      for (auto tile : row)
+      for (const auto& tile : row)
       {
         if (tile->getType() == TileType::T) // only T tiles are Treasure tiles
         {
@@ -36,9 +38,9 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{cur
   }
   else
   {
-    for (auto row : game_.getgameboard())
+    for (const auto& row : game_.getgameboard())
     {
-      for (auto tile : row)
+      for (const auto& tile : row)
       {
         try
         {
@@ -59,7 +61,6 @@ AI::AI(Game& game, shared_ptr<Player> current_player) : game_{game}, player_{cur
       }
     }
   }
-
   // set goal to treasure of player
 };
 
@@ -72,11 +73,12 @@ long AI::getLifeTime()
 
 void AI::printInfo()
 {
-  for (auto command : commands)
+  for (const auto& command : commands)
   {
     cout << INFO_PRINTOUT << command << endl;
   }
 }
+
 void AI::onlyGo()
 {
   commands = {"", "finish"};
@@ -91,7 +93,7 @@ void AI::onlyGo()
     success_flag = true;
     only_go_flag = true;
   }
-  catch (ImpossibleMove)
+  catch (ImpossibleMove& e)
   {
     commands = {"finish"};
     return;
