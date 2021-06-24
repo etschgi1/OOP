@@ -173,21 +173,6 @@ void AI::run()
         }
         catch (ImpossibleMove& e)
         {
-          // // best insert move hinzufügen.
-          // for (size_t row = 0; row < 7; row++)
-          // {
-          //   for (size_t col = 0; col < 7; col++)
-          //   {
-          //     try
-          //     {
-          //       game_.goTo(player_, row, col, false);
-          //     }
-          //     catch (ImpossibleMove& e)
-          //     {
-          //       continue;
-          //     }
-          //   }
-          // }
           //! zurückschieben nicht vergessen!!!! falls move impossible
           side = game_.opposite_sides_[side];
           game_.pseudoinsertTile(side, position);
