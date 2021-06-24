@@ -23,6 +23,7 @@ private:
   unsigned long fall_back_pos;
   bool success_flag = false;
   bool only_go_flag = false;
+  size_t best_distance = 8; //threshold for best distance
   // inserts:
   vector<char> insert_sides = {'t', 'l', 'b', 'r'};
   char insert_side;
@@ -30,8 +31,8 @@ private:
 
   // field_goal
   shared_ptr<Tile> goal_tile;
-  unsigned long goal_row;
-  unsigned long goal_col;
+  long goal_row;
+  long goal_col;
 
 public:
   // supply game instance to AI
@@ -55,6 +56,7 @@ public:
   [[nodiscard]] string getInsertCommand() const { return commands.at(0); }
   [[nodiscard]] string getGoCommand() const { return only_go_flag ? commands.at(0) : commands.at(1); }
   void onlyGo();
+  size_t getDistancetogoal(long row, long col);
 };
 
 #endif // OOP1SS21_A2_135_AI
